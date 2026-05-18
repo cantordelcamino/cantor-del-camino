@@ -476,15 +476,50 @@ function reading(ref,texto,nota){
 function versiculo(V,R){return '<div class="vcl"><span class="vm">V.</span><span class="vt">'+V+'</span><span class="vm">R.</span><span class="vt">'+R+'</span></div>';}
 function pater(){return '<div class="pater">Padre nuestro, que estás en el cielo,<br>santificado sea tu nombre;<br>venga a nosotros tu reino;<br>hágase tu voluntad en la tierra como en el cielo.<br>Danos hoy nuestro pan de cada día;<br>perdona nuestras ofensas,<br>como también nosotros perdonamos<br>a los que nos ofenden;<br>no nos dejes caer en tentación,<br>y líbranos del mal.</div>';}
 function oracion(txt){if(!txt||txt.startsWith('['))return '';return '<div class="pblock"><div style="font-family:var(--fn-lit);font-size:1rem;color:var(--text);line-height:1.9;margin-bottom:10px">'+txt+'</div>'+versiculo('','<span class="amen">Amén.</span>')+'</div>';}
+// ── Render a psalm/canticle object (v2 JSON) or string (v1 JSON)
+function renderPsalmItem(item, labelTxt){
+  if(!item) return '';
+  // v1: item is a plain string
+  if(typeof item === 'string'){
+    return '<div class="stitle">'+item+'</div>';
+  }
+  // v2: item is an object with numero, titulo, antifona, texto, gloria
+  var h='';
+  var heading=(item.numero?'<strong>Salmo '+item.numero+'</strong> ':'')+
+              (item.titulo?'<em>'+item.titulo+'</em>':'');
+  if(item.referencia){heading='<strong>'+item.referencia+'</strong>'+(item.titulo?' — <em>'+item.titulo+'</em>':'');}
+  if(heading) h+='<div class="stitle">'+heading+'</div>';
+  if(item.antifona) h+=ant(item.antifona);
+  if(item.texto){
+    var lines=item.texto.split('\n');
+    var psalmHtml='<div class="psalm">';
+    var strophe='<div class="strophe">';
+    lines.forEach(function(line){
+      if(line.trim()===''){
+        psalmHtml+=strophe+'</div>';
+        strophe='<div class="strophe">';
+      } else {
+        strophe+='<p>'+line+'</p>';
+      }
+    });
+    psalmHtml+=strophe+'</div></div>';
+    h+=psalmHtml;
+  }
+  if(item.gloria) h+='<div class="gloria">'+item.gloria+'</div>';
+  if(item.antifona) h+=ant(item.antifona);
+  return h;
+}
+
 function salmodia_block(sal){
-  if(!sal)return '';
-  var h='<div class="pblock">';
-  if(sal.salmo_1){h+='<div class="stitle">'+sal.salmo_1+'</div>';}
-  if(sal.cantico_ot){h+='<div class="stitle" style="margin-top:8px">'+sal.cantico_ot+'</div>';}
-  if(sal.cantico_nt){h+='<div class="stitle" style="margin-top:8px">'+sal.cantico_nt+'</div>';}
-  if(sal.salmo_2){h+='<div class="stitle" style="margin-top:8px">'+sal.salmo_2+'</div>';}
-  if(sal.nota){h+='<div style="font-size:0.8rem;color:var(--text3);font-style:italic;margin-top:10px">'+sal.nota+'</div>';}
-  h+='</div>';
+  if(!sal) return '';
+  var h='';
+  // Handle v2 structure: salmo_1, cantico, salmo_2
+  if(sal.salmo_1!==undefined) h+=renderPsalmItem(sal.salmo_1,'Salmo');
+  if(sal.cantico!==undefined)  h+=renderPsalmItem(sal.cantico,'Cántico');
+  if(sal.cantico_ot!==undefined) h+=renderPsalmItem(sal.cantico_ot,'Cántico');
+  if(sal.cantico_nt!==undefined) h+=renderPsalmItem(sal.cantico_nt,'Cántico');
+  if(sal.salmo_2!==undefined)  h+=renderPsalmItem(sal.salmo_2,'Salmo');
+  if(sal.nota && typeof sal.nota==='string') h+='<div style="font-size:0.8rem;color:var(--text3);font-style:italic;margin-top:10px">'+sal.nota+'</div>';
   return h;
 }
 
@@ -513,22 +548,56 @@ function buildLaudes(laud, shortDate){
   h+='<div class="pblock">'+label('Lectura Breve')+reading(lb.ref||lb.referencia, lb.texto)+'</div>';
   // Ad
   h+=adBlock('2222222222');
-  // Responsorio
+  // Responsorio breve (v2: full object with V,R,V2,R2,Gloria,R3)
   var rb=laud.responsorio_breve||{};
-  if(rb.V&&rb.R){
-    h+='<div class="pblock">'+label('Responsorio Breve')+versiculo(rb.V,rb.R)+'</div>';
+  if(rb.V){
+    var rh='<div class="vcl">';
+    rh+='<span class="vm">V.</span><span class="vt">'+rb.V+'</span>';
+    rh+='<span class="vm">R.</span><span class="vt">'+(rb.R||rb.V)+'</span>';
+    if(rb.V2){rh+='<span class="vm">V.</span><span class="vt">'+rb.V2+'</span>';}
+    if(rb.R2){rh+='<span class="vm">R.</span><span class="vt">'+rb.R2+'</span>';}
+    if(rb.Gloria){rh+='<span class="vm">V.</span><span class="vt">'+rb.Gloria+'</span>';}
+    if(rb.R3){rh+='<span class="vm">R.</span><span class="vt">'+rb.R3+'</span>';}
+    rh+='</div>';
+    h+='<div class="pblock">'+label('Responsorio Breve')+rh+'</div>';
   } else {
     h+='<div class="pblock">'+label('Responsorio Breve')+'<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Ver Breviario Romano.</div></div>';
   }
-  // Benedictus
+  // Benedictus — use texto from JSON if available
   var ben=laud.benedictus||{};
   h+='<div class="pblock">'+label('Benedictus')+'<div class="stitle">Cántico de Zacarías — Lc 1, 68-79</div>';
   h+=ant(ben.antifona);
-  h+='<div class="cbox"><div class="psalm"><div class="strophe"><p>Bendito el Señor, Dios de Israel,</p><p>porque ha visitado y redimido a su pueblo,</p><p>suscitándonos una fuerza de salvación</p><p>en la casa de David, su siervo.</p></div><div class="strophe"><p>Y tú, niño, te llamarán profeta del Altísimo,</p><p>porque irás delante del Señor a preparar sus caminos,</p><p>anunciando a su pueblo la salvación,</p><p>el perdón de sus pecados.</p></div><div class="strophe"><p>Por la entrañable misericordia de nuestro Dios,</p><p>nos visitará el sol que nace de lo alto,</p><p>para guiar nuestros pasos</p><p>por el camino de la paz.</p></div></div><div class="gloria">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</div></div>';
+  h+='<div class="cbox">';
+  if(ben.texto){
+    var blines=ben.texto.split('\n');
+    var bhtml='<div class="psalm">';
+    var bstrophe='<div class="strophe">';
+    blines.forEach(function(line){
+      if(line.trim()===''){bhtml+=bstrophe+'</div>';bstrophe='<div class="strophe">';}
+      else{bstrophe+='<p>'+line+'</p>';}
+    });
+    bhtml+=bstrophe+'</div></div>';
+    h+=bhtml;
+  } else {
+    h+='<div class="psalm"><div class="strophe"><p>Bendito el Señor, Dios de Israel,</p><p>porque ha visitado y redimido a su pueblo,</p><p>suscitándonos una fuerza de salvación</p><p>en la casa de David, su siervo.</p></div><div class="strophe"><p>Y tú, niño, te llamarán profeta del Altísimo,</p><p>porque irás delante del Señor a preparar sus caminos,</p><p>anunciando a su pueblo la salvación,</p><p>el perdón de sus pecados.</p></div><div class="strophe"><p>Por la entrañable misericordia de nuestro Dios,</p><p>nos visitará el sol que nace de lo alto,</p><p>para guiar nuestros pasos</p><p>por el camino de la paz.</p></div></div>';
+  }
+  h+='<div class="gloria">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</div></div>';
   if(ben.antifona)h+=ant(ben.antifona);
   h+='</div>';
-  // Preces
-  h+='<div class="pblock">'+label('Preces')+'<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Las preces de Laudes son propias del tiempo. Ver Breviario Romano.</div></div>';
+  // Preces (v2: object with introduccion, estribillo, preces[])
+  var prec=laud.preces||{};
+  if(prec.preces&&prec.preces.length){
+    var ph='<div class="pblock">'+label('Preces');
+    if(prec.introduccion) ph+='<div style="font-style:italic;color:var(--text3);font-size:0.9rem;margin-bottom:14px">'+prec.introduccion+'</div>';
+    if(prec.estribillo) ph+='<div style="text-align:center;font-family:var(--fn-brand);font-size:0.78rem;letter-spacing:0.1em;color:var(--gold);margin-bottom:20px;text-transform:uppercase">'+prec.estribillo+'</div>';
+    prec.preces.forEach(function(pr){
+      ph+='<div class="interc"><p>'+pr.p+'</p><span class="resp">'+pr.r+'</span></div>';
+    });
+    ph+='</div>';
+    h+=ph;
+  } else {
+    h+='<div class="pblock">'+label('Preces')+'<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Las preces de Laudes son propias del tiempo. Ver Breviario Romano.</div></div>';
+  }
   // Padre Nuestro
   h+='<div class="pblock">'+label('Padre Nuestro')+pater()+'</div>';
   // Oración
@@ -584,13 +653,53 @@ function buildVisperas(visp, shortDate){
   h+='<div class="pblock">'+label('Lectura Breve')+reading(lb.ref||lb.referencia, lb.texto)+'</div>';
   h+=adBlock('3333333333');
   var rb=visp.responsorio_breve||{};
-  h+='<div class="pblock">'+label('Responsorio Breve')+'<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Ver Breviario Romano.</div></div>';
+  if(rb.V){
+    var rvh='<div class="vcl">';
+    rvh+='<span class="vm">V.</span><span class="vt">'+rb.V+'</span>';
+    rvh+='<span class="vm">R.</span><span class="vt">'+(rb.R||rb.V)+'</span>';
+    if(rb.V2){rvh+='<span class="vm">V.</span><span class="vt">'+rb.V2+'</span>';}
+    if(rb.R2){rvh+='<span class="vm">R.</span><span class="vt">'+rb.R2+'</span>';}
+    if(rb.Gloria){rvh+='<span class="vm">V.</span><span class="vt">'+rb.Gloria+'</span>';}
+    if(rb.R3){rvh+='<span class="vm">R.</span><span class="vt">'+rb.R3+'</span>';}
+    rvh+='</div>';
+    h+='<div class="pblock">'+label('Responsorio Breve')+rvh+'</div>';
+  } else {
+    h+='<div class="pblock">'+label('Responsorio Breve')+'<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Ver Breviario Romano.</div></div>';
+  }
   var mag=visp.magnificat||{};
   h+='<div class="pblock">'+label('Magníficat')+'<div class="stitle">Cántico de María — Lc 1, 46-55</div>';
   h+=ant(mag.antifona);
-  h+='<div class="cbox"><div class="psalm"><div class="strophe"><p>Proclama mi alma la grandeza del Señor,</p><p>se alegra mi espíritu en Dios, mi Salvador;</p><p>porque ha mirado la humillación de su esclava.</p></div><div class="strophe"><p>Desde ahora me felicitarán todas las generaciones,</p><p>porque el Poderoso ha hecho obras grandes por mí:</p><p>su nombre es santo,</p><p>y su misericordia llega a sus fieles</p><p>de generación en generación.</p></div><div class="strophe"><p>Él hace proezas con su brazo:</p><p>dispersa a los soberbios de corazón,</p><p>derriba del trono a los poderosos</p><p>y enaltece a los humildes.</p></div><div class="strophe"><p>A los hambrientos los colma de bienes</p><p>y a los ricos los despide vacíos.</p></div></div><div class="gloria">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</div></div>';
+  h+='<div class="cbox">';
+  if(mag.texto){
+    var mlines=mag.texto.split('\n');
+    var mhtml='<div class="psalm">';
+    var mstrophe='<div class="strophe">';
+    mlines.forEach(function(line){
+      if(line.trim()===''){mhtml+=mstrophe+'</div>';mstrophe='<div class="strophe">';}
+      else{mstrophe+='<p>'+line+'</p>';}
+    });
+    mhtml+=mstrophe+'</div></div>';
+    h+=mhtml;
+  } else {
+    h+='<div class="psalm"><div class="strophe"><p>Proclama mi alma la grandeza del Señor,</p><p>se alegra mi espíritu en Dios, mi Salvador;</p><p>porque ha mirado la humillación de su esclava.</p></div><div class="strophe"><p>Desde ahora me felicitarán todas las generaciones,</p><p>porque el Poderoso ha hecho obras grandes por mí:</p><p>su nombre es santo,</p><p>y su misericordia llega a sus fieles</p><p>de generación en generación.</p></div><div class="strophe"><p>Él hace proezas con su brazo:</p><p>dispersa a los soberbios de corazón,</p><p>derriba del trono a los poderosos</p><p>y enaltece a los humildes.</p></div><div class="strophe"><p>A los hambrientos los colma de bienes</p><p>y a los ricos los despide vacíos.</p></div></div>';
+  }
+  h+='<div class="gloria">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</div></div>';
   if(mag.antifona)h+=ant(mag.antifona);
   h+='</div>';
+  // Preces Visperas
+  var precv=visp.preces||{};
+  if(precv.preces&&precv.preces.length){
+    var pvh='<div class="pblock">'+label('Preces');
+    if(precv.introduccion) pvh+='<div style="font-style:italic;color:var(--text3);font-size:0.9rem;margin-bottom:14px">'+precv.introduccion+'</div>';
+    if(precv.estribillo) pvh+='<div style="text-align:center;font-family:var(--fn-brand);font-size:0.78rem;letter-spacing:0.1em;color:var(--gold);margin-bottom:20px;text-transform:uppercase">'+precv.estribillo+'</div>';
+    precv.preces.forEach(function(pr){
+      pvh+='<div class="interc"><p>'+pr.p+'</p><span class="resp">'+pr.r+'</span></div>';
+    });
+    pvh+='</div>';
+    h+=pvh;
+  } else {
+    h+='<div class="pblock">'+label('Preces')+'<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Las preces de Vísperas son propias del tiempo. Ver Breviario Romano.</div></div>';
+  }
   h+='<div class="pblock">'+label('Padre Nuestro')+pater()+'</div>';
   h+='<div class="pblock">'+label('Oración')+oracion(visp.oracion)+'</div>';
   h+='<div class="orn">✦ &nbsp; ✦ &nbsp; ✦</div>';
@@ -612,7 +721,20 @@ function buildCompletas(comp, shortDate){
   var s90=sal.salmo_90||{};
   h+='<div class="pblock">'+label('Salmo 90 — Confianza en la protección de Dios');
   h+=ant(s90.antifona||'Bajo tus alas me amparo, Señor.');
-  h+='<div class="psalm"><div class="strophe"><p>El que habita al amparo del Altísimo</p><p>y se aloja a la sombra del Omnipotente,</p><p>dice al Señor: «Mi refugio, mi baluarte,</p><p>mi Dios, en quien confío.»</p></div><div class="strophe"><p>No temerás el terror nocturno,</p><p>ni la flecha que vuela de día,</p><p>ni la peste que avanza en las tinieblas,</p><p>ni la epidemia que devasta a mediodía.</p></div><div class="strophe"><p>Porque a sus ángeles ha dado órdenes</p><p>para que te guarden en tus caminos;</p><p>te llevarán en sus palmas</p><p>para que tu pie no tropiece en la piedra.</p></div></div>';
+  var s90text=(comp.salmodia&&comp.salmodia.salmo_90&&comp.salmodia.salmo_90.texto)||null;
+  if(s90text){
+    var s90lines=s90text.split('\n');
+    var s90html='<div class="psalm">';
+    var s90strophe='<div class="strophe">';
+    s90lines.forEach(function(line){
+      if(line.trim()===''){s90html+=s90strophe+'</div>';s90strophe='<div class="strophe">';}
+      else{s90strophe+='<p>'+line+'</p>';}
+    });
+    s90html+=s90strophe+'</div></div>';
+    h+=s90html;
+  } else {
+    h+='<div class="psalm"><div class="strophe"><p>El que habita al amparo del Altísimo</p><p>y se aloja a la sombra del Omnipotente,</p><p>dice al Señor: «Mi refugio, mi baluarte,</p><p>mi Dios, en quien confío.»</p></div><div class="strophe"><p>No temerás el terror nocturno,</p><p>ni la flecha que vuela de día,</p><p>ni la peste que avanza en las tinieblas,</p><p>ni la epidemia que devasta a mediodía.</p></div><div class="strophe"><p>Porque a sus ángeles ha dado órdenes</p><p>para que te guarden en tus caminos;</p><p>te llevarán en sus palmas</p><p>para que tu pie no tropiece en la piedra.</p></div></div>';
+  }
   h+='<div class="gloria">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</div>';
   h+=ant(s90.antifona||'Bajo tus alas me amparo, Señor.');
   h+='</div>';
