@@ -466,8 +466,7 @@ function getTodayKey(){
 }
 
 // ── RENDER HELPERS ───────────────────────────────────────────────
-function e(tag,cls,html){var el=document.createElement(tag);if(cls)el.className=cls;if(html!==undefined)el.innerHTML=html;return el;}
-function label(txt){var d=e('div','slabel',txt);return d;}
+function label(txt){return '<div class="slabel">'+txt+'</div>';}
 function ant(txt){if(!txt||txt.startsWith('['))return '';return '<div class="ant">'+txt+'</div>';}
 function reading(ref,texto,nota){
   if(!texto||texto.startsWith('['))return '<div class="reading"><span class="reading-ref">'+(ref||'')+'</span><br><em style="color:var(--text3)">Ver texto en el Breviario Romano.</em></div>';
