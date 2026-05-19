@@ -106,6 +106,36 @@ body, .hdr, .widget, .reading, .cbox, .gospel-card,
 .theme-toggle svg { flex-shrink: 0; transition: transform .4s ease; }
 .theme-toggle:hover svg { transform: rotate(20deg); }
 [data-theme="light"] .theme-toggle { background: var(--bg3); }
+
+/* ── FONT SIZE TOGGLE BUTTON ── */
+.font-toggle {
+  background: var(--bg3);
+  border: 1px solid var(--bdr2);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  font-family: var(--fn-brand);
+  color: var(--text2);
+  flex-shrink: 0;
+  transition: background .2s, border-color .2s, color .2s;
+}
+.font-toggle:hover { background: var(--bg4); color: var(--text); border-color: var(--bdr2); }
+[data-theme="light"] .font-toggle { background: var(--bg3); }
+.font-toggle .fa-small { font-size: 0.7rem; font-weight: 600; line-height: 1; }
+.font-toggle .fa-big   { font-size: 1.0rem; font-weight: 700; line-height: 1; }
+.font-toggle .fa-label { font-size: 0.6rem; letter-spacing: 0.1em; margin-left: 4px; text-transform: uppercase; opacity: 0.8; }
+
+/* ── FONT SIZE SCALES ── */
+/* Se aplican vía atributo data-fontsize en <html> */
+html[data-fontsize="normal"] body { font-size: 19px; }
+html[data-fontsize="large"]  body { font-size: 21.5px; }
+html[data-fontsize="xl"]     body { font-size: 24px; }
+html[data-fontsize="large"]  { font-size: 17.5px; }
+html[data-fontsize="xl"]     { font-size: 19px; }
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:var(--fn-lit);background:var(--bg);color:var(--text);font-size:19px;line-height:1.85;-webkit-font-smoothing:antialiased}
@@ -270,6 +300,10 @@ footer{border-top:1px solid var(--bdr);background:var(--bg2);text-align:center;p
       </div>
     </a>
     <div style="display:flex;align-items:center;gap:14px;flex-shrink:0">
+      <button class="font-toggle" id="fontToggle" aria-label="Cambiar tamaño de texto" title="Cambiar tamaño del texto">
+        <span class="fa-small">A</span><span class="fa-big">A</span>
+        <span class="fa-label" id="fontLabel">Normal</span>
+      </button>
       <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo de color" title="Cambiar modo claro/oscuro">
         <svg id="themeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5"/>
@@ -528,41 +562,184 @@ function adBlock(slot){
 }
 
 // ── BUILD LAUDES ──────────────────────────────────────────────────
-function buildLaudes(laud, shortDate){
+// Orden del Camino Neocatecumenal:
+// 1. Saludo inicial
+// 2. Invitatorio (antífona + Salmo 94)
+// 3. Himno
+// 4. Salmodia
+// 5. Lectura breve
+// 6. Oficio de Lectura (1ª lectura + responsorio, 2ª lectura + responsorio)
+// 7. Evangelio del día
+// 8. Benedictus (con antífona)
+// 9. Preces
+// 10. Padre Nuestro
+// 11. Oración final
+function buildLaudes(laud, shortDate, misa, today){
   var h='<article class="hour active" id="hour-laudes">';
   h+='<h1 class="hour-title">Laudes</h1>';
   h+='<p class="hour-sub">Oración de la Mañana · '+shortDate+'</p>';
-  // Verso inicial
-  h+='<div class="pblock">'+label('Verso Inicial')+versiculo('Señor, abre mis labios.','Y mi boca proclamará tu alabanza.')+'</div>';
-  // Himno
+
+  // ── Helpers para enlaces externos (disponibles en todo el flujo) ──
+  var mesesEng=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  var breviarioURL='';
+  if(today && today.getFullYear){
+    var yyyy=today.getFullYear();
+    var mes3=mesesEng[today.getMonth()];
+    var dd=today.getDate();
+    breviarioURL='https://liturgiadelashoras.github.io/sync/'+yyyy+'/'+mes3+'/'+dd+'/oficio.htm';
+  }
+  function linkExterno(url, etiqueta, fuente, fallback){
+    if(!url)return'<div style="font-size:0.82rem;color:var(--text3);font-style:italic;margin-top:10px">'+(fallback||etiqueta)+'</div>';
+    return'<div style="margin-top:14px;text-align:center">'+
+      '<a href="'+url+'" target="_blank" rel="noopener" '+
+      'style="display:inline-block;padding:10px 18px;background:var(--gold,#c9973a);color:#fff;text-decoration:none;border-radius:6px;font-weight:600;font-size:0.9rem;box-shadow:0 2px 6px rgba(0,0,0,0.15);transition:transform .15s ease,box-shadow .15s ease" '+
+      'onmouseover="this.style.transform=\'translateY(-1px)\';this.style.boxShadow=\'0 4px 10px rgba(0,0,0,0.2)\'" '+
+      'onmouseout="this.style.transform=\'\';this.style.boxShadow=\'0 2px 6px rgba(0,0,0,0.15)\'">'+
+      etiqueta+'</a>'+
+      (fuente?'<div style="font-size:0.72rem;color:var(--text3);margin-top:6px;font-style:italic">Fuente: '+fuente+'</div>':'')+
+      '</div>';
+  }
+  function linkBreviario(fallback){
+    return linkExterno(breviarioURL, '📖 Leer texto completo en el Breviario', 'liturgiadelashoras.github.io', fallback);
+  }
+  function linkEvangelioVN(fallback){
+    return linkExterno('https://www.vaticannews.va/es/evangelio-de-hoy.html', '✝️ Leer Evangelio del día', 'Vatican News (Biblia de Jerusalén)', fallback);
+  }
+
+  // 1. Saludo inicial
+  var vi=laud.verso_inicial||{};
+  h+='<div class="pblock">'+label('Saludo Inicial')+versiculo(vi.V||'Señor, abre mis labios.', vi.R||'Y mi boca proclamará tu alabanza.')+'</div>';
+
+  // 2. Invitatorio: antífona + Salmo 94
+  var inv=laud.invitatorio||{};
+  h+='<div class="pblock">'+label('Invitatorio')+'<div class="stitle">Salmo 94 (95) — Invitación a la alabanza divina</div>';
+  if(inv.antifona){h+=ant(inv.antifona);}
+  else{h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic;margin-bottom:10px">Antífona del invitatorio — ver Breviario Romano.</div>';}
+  if(inv.salmo_94 && inv.salmo_94.texto){
+    var ivlines=inv.salmo_94.texto.split('\n');
+    var ivhtml='<div class="psalm">';
+    var ivstrophe='<div class="strophe">';
+    ivlines.forEach(function(line){
+      if(line.trim()===''){ivhtml+=ivstrophe+'</div>';ivstrophe='<div class="strophe">';}
+      else{ivstrophe+='<p>'+line+'</p>';}
+    });
+    ivhtml+=ivstrophe+'</div></div>';
+    h+=ivhtml;
+    h+='<div class="gloria">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</div>';
+    if(inv.antifona){h+=ant(inv.antifona);}
+  } else {
+    h+=linkBreviario('Texto del Salmo 94 — ver Breviario Romano.');
+  }
+  h+='</div>';
+
+  // 3. Himno
   var himno=laud.himno||{};
   h+='<div class="pblock">'+label('Himno')+'<div class="stitle">'+(himno.titulo||himno.indicacion||'Himno del tiempo')+'</div>';
   if(himno.texto){h+='<div class="psalm"><div class="strophe">'+himno.texto.split('\n').map(function(l){return l.trim()?'<p>'+l+'</p>':''}).join('')+'</div></div>';}
   else{h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic">'+(himno.nota||'Ver Himnario del Breviario Romano.')+'</div>';}
   h+='</div>';
-  // Salmodia
+
+  // 4. Salmodia
   h+='<div class="pblock">'+label('Salmodia')+salmodia_block(laud.salmodia)+'</div>';
-  // Lectura breve
+
+  // 5. Lectura breve
   var lb=laud.lectura_breve||{};
   h+='<div class="pblock">'+label('Lectura Breve')+reading(lb.ref||lb.referencia, lb.texto)+'</div>';
+
   // Ad
   h+=adBlock('2222222222');
-  // Responsorio breve (v2: full object with V,R,V2,R2,Gloria,R3)
-  var rb=laud.responsorio_breve||{};
-  if(rb.V){
-    var rh='<div class="vcl">';
-    rh+='<span class="vm">V.</span><span class="vt">'+rb.V+'</span>';
-    rh+='<span class="vm">R.</span><span class="vt">'+(rb.R||rb.V)+'</span>';
-    if(rb.V2){rh+='<span class="vm">V.</span><span class="vt">'+rb.V2+'</span>';}
-    if(rb.R2){rh+='<span class="vm">R.</span><span class="vt">'+rb.R2+'</span>';}
-    if(rb.Gloria){rh+='<span class="vm">V.</span><span class="vt">'+rb.Gloria+'</span>';}
-    if(rb.R3){rh+='<span class="vm">R.</span><span class="vt">'+rb.R3+'</span>';}
-    rh+='</div>';
-    h+='<div class="pblock">'+label('Responsorio Breve')+rh+'</div>';
+
+  // 6. Oficio de Lectura — Primera y Segunda lectura
+  // Detectar año litúrgico ferial: par=Año II, impar=Año I
+  var anioFerial=(today && today.getFullYear) ? (today.getFullYear()%2===0 ? 'II' : 'I') : 'II';
+  var ofl=laud.oficio_lectura||{};
+  
+  h+='<div class="pblock">'+label('Oficio de Lectura — Año '+anioFerial)+'</div>';
+
+  // 6a. Primera lectura del Oficio
+  var pl1=ofl.primera_lectura||{};
+  // Soporte para variante año I / año II en primera lectura (opcional)
+  if(anioFerial==='I' && ofl.primera_lectura_a1) pl1=ofl.primera_lectura_a1;
+  if(anioFerial==='II' && ofl.primera_lectura_a2) pl1=ofl.primera_lectura_a2;
+  h+='<div class="pblock">'+label('Primera Lectura');
+  if(pl1.ref||pl1.referencia){
+    h+='<div class="gospel-card">';
+    h+='<div class="gospel-ref">'+(pl1.ref||pl1.referencia)+'</div>';
+    if(pl1.titulo)h+='<div class="gospel-titulo">'+pl1.titulo+'</div>';
+    if(pl1.texto){
+      h+='<div style="font-family:var(--fn-lit);font-size:1.02rem;line-height:1.9;margin-top:12px">'+pl1.texto.replace(/\n/g,'<br>')+'</div>';
+    } else {
+      h+=linkBreviario('Texto completo en Breviario.');
+    }
+    h+='</div>';
+    // Responsorio de la primera lectura
+    if(pl1.responsorio){
+      var r1=pl1.responsorio;
+      var rh1='<div class="vcl" style="margin-top:12px">';
+      if(r1.R)rh1+='<span class="vm">R.</span><span class="vt">'+r1.R+'</span>';
+      if(r1.V)rh1+='<span class="vm">V.</span><span class="vt">'+r1.V+'</span>';
+      if(r1.R2)rh1+='<span class="vm">R.</span><span class="vt">'+r1.R2+'</span>';
+      rh1+='</div>';
+      h+=rh1;
+    }
   } else {
-    h+='<div class="pblock">'+label('Responsorio Breve')+'<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Ver Breviario Romano.</div></div>';
+    h+=linkBreviario('Primera lectura del Oficio (Año '+anioFerial+')');
   }
-  // Benedictus — use texto from JSON if available
+  h+='</div>';
+
+  // 6b. Segunda lectura del Oficio
+  var pl2=ofl.segunda_lectura||{};
+  if(anioFerial==='I' && ofl.segunda_lectura_a1) pl2=ofl.segunda_lectura_a1;
+  if(anioFerial==='II' && ofl.segunda_lectura_a2) pl2=ofl.segunda_lectura_a2;
+  h+='<div class="pblock">'+label('Segunda Lectura');
+  if(pl2.fuente||pl2.titulo||pl2.texto){
+    h+='<div class="gospel-card">';
+    if(pl2.fuente)h+='<div class="gospel-ref">'+pl2.fuente+'</div>';
+    if(pl2.referencia)h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic;margin-bottom:6px">('+pl2.referencia+')</div>';
+    if(pl2.titulo)h+='<div class="gospel-titulo">'+pl2.titulo+'</div>';
+    if(pl2.texto){
+      h+='<div style="font-family:var(--fn-lit);font-size:1.02rem;line-height:1.9;margin-top:12px">'+pl2.texto.replace(/\n/g,'<br>')+'</div>';
+    } else {
+      h+=linkBreviario('Texto completo en Breviario.');
+    }
+    h+='</div>';
+    // Responsorio de la segunda lectura
+    if(pl2.responsorio){
+      var r2=pl2.responsorio;
+      var rh2='<div class="vcl" style="margin-top:12px">';
+      if(r2.R)rh2+='<span class="vm">R.</span><span class="vt">'+r2.R+'</span>';
+      if(r2.V)rh2+='<span class="vm">V.</span><span class="vt">'+r2.V+'</span>';
+      if(r2.R2)rh2+='<span class="vm">R.</span><span class="vt">'+r2.R2+'</span>';
+      rh2+='</div>';
+      h+=rh2;
+    }
+  } else {
+    h+=linkBreviario('Segunda lectura del Oficio');
+  }
+  h+='</div>';
+
+  // 7. Evangelio del día (de la misa, texto Biblia de Jerusalén)
+  if(misa && misa.evangelio){
+    var ev=misa.evangelio||{};
+    h+='<div class="pblock">'+label('Evangelio del Día');
+    h+='<div class="gospel-card">';
+    h+='<div class="gospel-ref">'+(ev.ref||ev.referencia||'—')+'</div>';
+    if(ev.titulo)h+='<div class="gospel-titulo">'+ev.titulo+'</div>';
+    if(ev.texto){h+='<div style="font-family:var(--fn-lit);font-size:1.02rem;line-height:1.9;margin-top:12px;font-style:italic">'+ev.texto.replace(/\n/g,'<br>')+'</div>';}
+    else{h+=linkEvangelioVN('Texto del evangelio — Biblia de Jerusalén.');}
+    if(ev.nota)h+='<div class="gospel-nota">'+ev.nota+'</div>';
+    h+='</div></div>';
+  }
+
+  // Responsorio breve de Laudes (mantener para conservar el dato del JSON, aunque ya no esté en el orden CN)
+  // En el orden del Camino Neocatecumenal, el responsorio breve no se usa explícitamente
+  // pero conservamos el dato. Si quieres ocultarlo, comenta el bloque siguiente.
+  var rb=laud.responsorio_breve||{};
+  if(rb.V && laud.mostrar_responsorio_breve!==false){
+    // ocultar por defecto en orden CN — descomenta si lo necesitas
+  }
+
+  // 8. Benedictus — antífona + cántico + antífona
   var ben=laud.benedictus||{};
   h+='<div class="pblock">'+label('Benedictus')+'<div class="stitle">Cántico de Zacarías — Lc 1, 68-79</div>';
   h+=ant(ben.antifona);
@@ -834,7 +1011,7 @@ async function render(){
   html+='</nav>';
 
   // Hours content
-  html+=buildLaudes(dayData.laudes||{}, shortDate);
+  html+=buildLaudes(dayData.laudes||{}, shortDate, dayData.misa||{}, today);
   html+=buildEvangelio(dayData.misa||{}, shortDate);
   html+=buildVisperas(dayData.visperas||{}, shortDate);
   html+=buildCompletas(dayData.completas||{}, shortDate);
@@ -971,6 +1148,35 @@ var _origApplyTheme = null;
   btn.addEventListener('click',function(){
     var cur=root.getAttribute('data-theme')||'dark';
     applyTheme(cur==='dark'?'light':'dark');
+  });
+})();
+
+// ── FONT SIZE TOGGLE ─────────────────────────────────────────────
+(function(){
+  var root=document.documentElement;
+  var btn=document.getElementById('fontToggle');
+  var lbl=document.getElementById('fontLabel');
+  if(!btn)return;
+
+  var SIZES=['normal','large','xl'];
+  var LABELS={normal:'Normal',large:'Grande',xl:'Muy grande'};
+
+  function applyFont(size){
+    if(SIZES.indexOf(size)<0) size='normal';
+    root.setAttribute('data-fontsize',size);
+    if(lbl) lbl.textContent=LABELS[size];
+    try{localStorage.setItem('cdc-fontsize',size);}catch(e){}
+  }
+
+  var saved='normal';
+  try{saved=localStorage.getItem('cdc-fontsize')||'normal';}catch(e){}
+  applyFont(saved);
+
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-fontsize')||'normal';
+    var idx=SIZES.indexOf(cur);
+    var next=SIZES[(idx+1)%SIZES.length];
+    applyFont(next);
   });
 })();
 
