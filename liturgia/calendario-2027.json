@@ -1,0 +1,4824 @@
+{
+  "_descripcion": "Calendario litúrgico 2027 — Calendario Romano General",
+  "_fuente": "gcatholic.org (iCal) + cálculo desde Pascua",
+  "_nota_ciclos": "ciclo_dom y ciclo_fer se asignan DÍA POR DÍA. Cambian en cada I Domingo de Adviento.",
+  "_total_dias": 365,
+  "fechas": {
+    "2027-01-01": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "viernes",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Santa María, Madre de Dios",
+        "color": "blanco"
+      },
+      "color": "blanco"
+    },
+    "2027-01-02": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "sabado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santos Basilio Magno y Gregorio de Nacianzo, obispos y doct",
+        "color": "blanco"
+      },
+      "color": "blanco"
+    },
+    "2027-01-03": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "domingo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-01-04": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "lunes",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-01-05": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "martes",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-01-06": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "miercoles",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "La Epifanía del Señor",
+        "color": "blanco"
+      },
+      "color": "blanco"
+    },
+    "2027-01-07": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "jueves",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Raimundo de Peñafort, presbítero",
+        "color": "blanco"
+      },
+      "color": "blanco"
+    },
+    "2027-01-08": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "viernes",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-01-09": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "sabado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-01-10": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "El Bautismo del Señor",
+        "color": "blanco"
+      }
+    },
+    "2027-01-11": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-01-12": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-01-13": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Hilario, obispo y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "I"
+    },
+    "2027-01-14": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-01-15": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-01-16": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-01-17": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-01-18": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-01-19": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-01-20": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "miercoles",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Fabián, papa y mártir",
+        "color": "rojo"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "San Sebastián, mártir",
+          "color": "rojo"
+        }
+      ]
+    },
+    "2027-01-21": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "jueves",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santa Inés, virgen y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-01-22": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "viernes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Vicente, diácono y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-01-23": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-01-24": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-01-25": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "La Conversión de San Pablo, apóstol",
+        "color": "blanco"
+      }
+    },
+    "2027-01-26": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santos Timoteo y Tito, obispos",
+        "color": "blanco"
+      }
+    },
+    "2027-01-27": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Ángela Merici, virgen",
+        "color": "blanco"
+      }
+    },
+    "2027-01-28": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santo Tomás de Aquino, presbítero y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "III"
+    },
+    "2027-01-29": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-01-30": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-01-31": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-02-01": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-02-02": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "La Presentación del Señor",
+        "color": "blanco"
+      }
+    },
+    "2027-02-03": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "miercoles",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Blas, obispo y mártir",
+        "color": "rojo"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "San Óscar, obispo",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-02-04": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-02-05": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "viernes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santa Águeda, virgen y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-02-06": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "sabado",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santos Pablo Miki y compañeros, mártires",
+        "color": "rojo"
+      }
+    },
+    "2027-02-07": {
+      "tiempo": "ordinario",
+      "semana": 5,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-02-08": {
+      "tiempo": "ordinario",
+      "semana": 5,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Jerónimo Emiliano",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa Josefina Bakhita, virgen",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-02-09": {
+      "tiempo": "ordinario",
+      "semana": 5,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-02-10": {
+      "tiempo": "cuaresma",
+      "semana": 0,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-02-11": {
+      "tiempo": "cuaresma",
+      "semana": 0,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Nuestra Señora de Lourdes",
+        "color": "morado"
+      }
+    },
+    "2027-02-12": {
+      "tiempo": "cuaresma",
+      "semana": 0,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-02-13": {
+      "tiempo": "cuaresma",
+      "semana": 0,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-02-14": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-02-15": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-02-16": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-02-17": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Los Santos Siete Fundadores de la Orden de los Servitas",
+        "color": "morado"
+      }
+    },
+    "2027-02-18": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-02-19": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-02-20": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-02-21": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-02-22": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "La Cátedra de San Pedro, apóstol",
+        "color": "blanco"
+      }
+    },
+    "2027-02-23": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Policarpo, obispo y mártir",
+        "color": "morado"
+      }
+    },
+    "2027-02-24": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-02-25": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-02-26": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-02-27": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Gregorio de Narek, abad y doctor de la Iglesia",
+        "color": "morado"
+      }
+    },
+    "2027-02-28": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-03-01": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-03-02": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-03-03": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-03-04": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Casimiro",
+        "color": "morado"
+      }
+    },
+    "2027-03-05": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-03-06": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-03-07": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-03-08": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan de Dios, religioso",
+        "color": "morado"
+      }
+    },
+    "2027-03-09": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Francisca Romana, religiosa",
+        "color": "morado"
+      }
+    },
+    "2027-03-10": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-03-11": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-03-12": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-03-13": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-03-14": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-03-15": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-03-16": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-03-17": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Patricio, obispo",
+        "color": "morado"
+      }
+    },
+    "2027-03-18": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Cirilo de Jerusalén, obispo y doctor de la Iglesia",
+        "color": "morado"
+      }
+    },
+    "2027-03-19": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "San José, esposo de la Bienaventurada Virgen María",
+        "color": "blanco"
+      }
+    },
+    "2027-03-20": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-03-21": {
+      "tiempo": "semana_santa",
+      "semana": null,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-03-22": {
+      "tiempo": "semana_santa",
+      "semana": null,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-03-23": {
+      "tiempo": "semana_santa",
+      "semana": null,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-03-24": {
+      "tiempo": "semana_santa",
+      "semana": null,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-03-25": {
+      "tiempo": "triduo",
+      "semana": null,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-03-26": {
+      "tiempo": "triduo",
+      "semana": null,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-03-27": {
+      "tiempo": "triduo",
+      "semana": null,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-03-28": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-03-29": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Lunes de la Octava de Pascua",
+        "color": "blanco"
+      }
+    },
+    "2027-03-30": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Martes de la Octava de Pascua",
+        "color": "blanco"
+      }
+    },
+    "2027-03-31": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Miércoles de la Octava de Pascua",
+        "color": "blanco"
+      }
+    },
+    "2027-04-01": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Jueves de la Octava de Pascua",
+        "color": "blanco"
+      }
+    },
+    "2027-04-02": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Viernes de la Octava de Pascua",
+        "color": "blanco"
+      }
+    },
+    "2027-04-03": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Sábado de la Octava de Pascua",
+        "color": "blanco"
+      }
+    },
+    "2027-04-04": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-04-05": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "La Anunciación del Señor",
+        "color": "blanco"
+      }
+    },
+    "2027-04-06": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-04-07": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Juan Bautista de La Salle, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-04-08": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-04-09": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-04-10": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-04-11": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-04-12": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-04-13": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Martín I, papa y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-04-14": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-04-15": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-04-16": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-04-17": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-04-18": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-04-19": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-04-20": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-04-21": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Anselmo, obispo y doctor de la Iglesia",
+        "color": "blanco"
+      }
+    },
+    "2027-04-22": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-04-23": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "viernes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Adalberto, obispo y mártir",
+        "color": "rojo"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "San Jorge, mártir",
+          "color": "rojo"
+        }
+      ]
+    },
+    "2027-04-24": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "sabado",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Fidel de Sigmaringa, presbítero y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-04-25": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-04-26": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-04-27": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-04-28": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Luis María Grignion de Montfort, presbítero",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "San Pedro Chanel, presbítero y mártir",
+          "color": "rojo"
+        }
+      ]
+    },
+    "2027-04-29": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santa Catalina de Siena, virgen y doctora de la Iglesia",
+        "color": "blanco"
+      }
+    },
+    "2027-04-30": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Pío V, papa",
+        "color": "blanco"
+      }
+    },
+    "2027-05-01": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San José Obrero",
+        "color": "blanco"
+      }
+    },
+    "2027-05-02": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-05-03": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "lunes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "Santos Felipe y Santiago, apóstoles",
+        "color": "rojo"
+      }
+    },
+    "2027-05-04": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-05-05": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-05-06": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-05-07": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-05-08": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-05-09": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "La Ascensión del Señor",
+        "color": "blanco"
+      }
+    },
+    "2027-05-10": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan de Ávila, presbítero y doctor de la Iglesia",
+        "color": "blanco"
+      }
+    },
+    "2027-05-11": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-05-12": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "miercoles",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Pancracio, mártir",
+        "color": "rojo"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santos Nereo y Aquileo, mártires",
+          "color": "rojo"
+        }
+      ]
+    },
+    "2027-05-13": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Nuestra Señora de Fátima",
+        "color": "blanco"
+      }
+    },
+    "2027-05-14": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "viernes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "San Matías, apóstol",
+        "color": "rojo"
+      }
+    },
+    "2027-05-15": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-05-16": {
+      "tiempo": "pascua",
+      "semana": 8,
+      "dia": "domingo",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Domingo de Pentecostés",
+        "color": "rojo"
+      }
+    },
+    "2027-05-17": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Bienaventurada Virgen María, Madre de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "III"
+    },
+    "2027-05-18": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan I, papa y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-05-19": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-05-20": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Bernardino de Siena, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-05-21": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "viernes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santos Cristóbal Magallanes, presbítero, y compañeros,",
+        "color": "rojo"
+      }
+    },
+    "2027-05-22": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Rita de Casia, religiosa",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa María en sábado",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-05-23": {
+      "tiempo": "ordinario",
+      "semana": 8,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "La Santísima Trinidad",
+        "color": "blanco"
+      }
+    },
+    "2027-05-24": {
+      "tiempo": "ordinario",
+      "semana": 8,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-05-25": {
+      "tiempo": "ordinario",
+      "semana": 8,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Beda el Venerable, presbítero y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "San Gregorio VII, papa",
+          "color": "blanco"
+        },
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa María Magdalena de Pazzi, virgen",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-05-26": {
+      "tiempo": "ordinario",
+      "semana": 8,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Felipe Neri, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-05-27": {
+      "tiempo": "ordinario",
+      "semana": 8,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "El Cuerpo y la Sangre Santísimos de Cristo",
+        "color": "blanco"
+      }
+    },
+    "2027-05-28": {
+      "tiempo": "ordinario",
+      "semana": 8,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-05-29": {
+      "tiempo": "ordinario",
+      "semana": 8,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Paolo VI, papa",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa María en sábado",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-05-30": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-05-31": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "La Visitación de la Bienaventurada Virgen María",
+        "color": "blanco"
+      }
+    },
+    "2027-06-01": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Justino, mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-06-02": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "miercoles",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santos Marcelino y Pedro, mártires",
+        "color": "rojo"
+      }
+    },
+    "2027-06-03": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "jueves",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santos Carlos Luanga y compañeros, mártires",
+        "color": "rojo"
+      },
+      "salterio": "I"
+    },
+    "2027-06-04": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "El Sagrado Corazón de Jesús",
+        "color": "blanco"
+      }
+    },
+    "2027-06-05": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "El Inmaculado Corazón de María",
+        "color": "blanco"
+      },
+      "salterio": "I"
+    },
+    "2027-06-06": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-06-07": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-06-08": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-06-09": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Efrén, diácono y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "II"
+    },
+    "2027-06-10": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-06-11": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "viernes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Bernabé, apóstol",
+        "color": "rojo"
+      }
+    },
+    "2027-06-12": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-06-13": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-06-14": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-06-15": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-06-16": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-06-17": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-06-18": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-06-19": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Romualdo, abad",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa María en sábado",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-06-20": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-06-21": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Luis Gonzaga, religioso",
+        "color": "blanco"
+      }
+    },
+    "2027-06-22": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Paulino de Nola, obispo",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santos Juan Fisher, obispo, y Tomás Moro, mártires",
+          "color": "rojo"
+        }
+      ]
+    },
+    "2027-06-23": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-06-24": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "El Nacimiento de San Juan Bautista",
+        "color": "blanco"
+      }
+    },
+    "2027-06-25": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-06-26": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-06-27": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-06-28": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "lunes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Ireneo, obispo, mártir y doctor de la Iglesia",
+        "color": "rojo"
+      }
+    },
+    "2027-06-29": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Santos Pedro y Pablo, apóstoles",
+        "color": "rojo"
+      }
+    },
+    "2027-06-30": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "miercoles",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Los Santos Primeros mártires de la Iglesia de Roma",
+        "color": "rojo"
+      }
+    },
+    "2027-07-01": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-07-02": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-07-03": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "sabado",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "Santo Tomás, apóstol",
+        "color": "rojo"
+      }
+    },
+    "2027-07-04": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-07-05": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Antonio María Zaccaria, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-07-06": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María Goretti, virgen y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-07-07": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-07-08": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-07-09": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "viernes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santos Agustín Zhao Rong, presbítero, y compañeros, már",
+        "color": "rojo"
+      }
+    },
+    "2027-07-10": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-07-11": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-07-12": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-07-13": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Enrique",
+        "color": "blanco"
+      }
+    },
+    "2027-07-14": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Camilo de Lellis, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-07-15": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Buenaventura, obispo y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "III"
+    },
+    "2027-07-16": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Nuestra Señora del Carmen",
+        "color": "blanco"
+      }
+    },
+    "2027-07-17": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-07-18": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-07-19": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-07-20": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Apolinar, obispo y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-07-21": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Lorenzo de Brindis, presbítero y doctor de la Iglesia",
+        "color": "blanco"
+      }
+    },
+    "2027-07-22": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "Santa María Magdalena",
+        "color": "blanco"
+      }
+    },
+    "2027-07-23": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Brígida de Suecia, religiosa",
+        "color": "blanco"
+      }
+    },
+    "2027-07-24": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Chárbel Makhlouf, presbítero",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa María en sábado",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-07-25": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-07-26": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santos Joaquín y Ana, padres de la bienaventurada Virgen Ma",
+        "color": "blanco"
+      }
+    },
+    "2027-07-27": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-07-28": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-07-29": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santos Marta, María y Lázaro",
+        "color": "blanco"
+      }
+    },
+    "2027-07-30": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Pedro Crisólogo, obispo y doctor de la Iglesia",
+        "color": "blanco"
+      }
+    },
+    "2027-07-31": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Ignacio de Loyola, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-08-01": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-08-02": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Eusebio de Vercelli, obispo",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "San Pedro Julián Eymard, presbítero",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-08-03": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-08-04": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Juan María Vianney, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-08-05": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "La Dedicación de la Basílica de Santa María",
+        "color": "blanco"
+      }
+    },
+    "2027-08-06": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "La Transfiguración del Señor",
+        "color": "blanco"
+      }
+    },
+    "2027-08-07": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Cayetano, presbítero",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santos Sixto II, papa, y compañeros, mártires",
+          "color": "rojo"
+        },
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa María en sábado",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-08-08": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-08-09": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "lunes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Teresa Benedicta de la Cruz, virgen y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-08-10": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "San Lorenzo, diácono y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-08-11": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santa Clara, virgen",
+        "color": "blanco"
+      }
+    },
+    "2027-08-12": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Juana Francisca de Chantal, religiosa",
+        "color": "blanco"
+      }
+    },
+    "2027-08-13": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "viernes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santos Ponciano, papa, e Hipólito, presbítero, mártire",
+        "color": "rojo"
+      }
+    },
+    "2027-08-14": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "sabado",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Maximiliano María Kolbe, presbítero y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-08-15": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "La Asunción de la Santísima Virgen María",
+        "color": "blanco"
+      }
+    },
+    "2027-08-16": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Esteban de Hungría",
+        "color": "blanco"
+      }
+    },
+    "2027-08-17": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-08-18": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-08-19": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan Eudes, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-08-20": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Bernardo, abad y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "IV"
+    },
+    "2027-08-21": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Pío X, papa",
+        "color": "blanco"
+      }
+    },
+    "2027-08-22": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-08-23": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Rosa de Lima, virgen",
+        "color": "blanco"
+      }
+    },
+    "2027-08-24": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "San Bartolomé, apóstol",
+        "color": "rojo"
+      }
+    },
+    "2027-08-25": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San José de Calasanz, presbítero",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "San Luis de Francia",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-08-26": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-08-27": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santa Mónica",
+        "color": "blanco"
+      }
+    },
+    "2027-08-28": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Agustín, obispo y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "I"
+    },
+    "2027-08-29": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-08-30": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-08-31": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-09-01": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-09-02": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-09-03": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Gregorio Magno, papa y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "II"
+    },
+    "2027-09-04": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-09-05": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-09-06": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-09-07": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-09-08": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "La Natividad de la Bienaventurada Virgen María",
+        "color": "blanco"
+      }
+    },
+    "2027-09-09": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Pedro Claver, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-09-10": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-09-11": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-09-12": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-09-13": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Juan Crisóstomo, obispo y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "IV"
+    },
+    "2027-09-14": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "La Exaltación de la Santa Cruz",
+        "color": "rojo"
+      }
+    },
+    "2027-09-15": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Nuestra Señora de los Dolores",
+        "color": "blanco"
+      }
+    },
+    "2027-09-16": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "jueves",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santos Cornelio, papa, y Cipriano, obispo, mártires",
+        "color": "rojo"
+      }
+    },
+    "2027-09-17": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Roberto Belarmino, obispo y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa Hildegarda de Bingen, virgen y doctora de la Iglesia",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-09-18": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-09-19": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-09-20": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "lunes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santos Andrés Kim Taegon, presbítero, Pablo Chong Hasang",
+        "color": "rojo"
+      }
+    },
+    "2027-09-21": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "San Mateo, apóstol y evangelista",
+        "color": "rojo"
+      }
+    },
+    "2027-09-22": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-09-23": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Pío de Pietrelcina, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-09-24": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-09-25": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-09-26": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-09-27": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Vicente de Paúl, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-09-28": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Wenceslao, mártir",
+        "color": "rojo"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santos Lorenzo Ruiz y compañeros, mártires",
+          "color": "rojo"
+        }
+      ]
+    },
+    "2027-09-29": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "Santos Miguel, Gabriel y Rafael, arcángeles",
+        "color": "blanco"
+      }
+    },
+    "2027-09-30": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Jerónimo, presbítero y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "II"
+    },
+    "2027-10-01": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santa Teresa del Niño Jesús, virgen y doctora de la Iglesia",
+        "color": "blanco"
+      }
+    },
+    "2027-10-02": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Los Santos Ángeles Custodios",
+        "color": "blanco"
+      }
+    },
+    "2027-10-03": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-10-04": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Francisco de Asís, religioso",
+        "color": "blanco"
+      }
+    },
+    "2027-10-05": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Faustina Kowalska, virgen",
+        "color": "blanco"
+      }
+    },
+    "2027-10-06": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Bruno, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-10-07": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Nuestra Señora del Rosario",
+        "color": "blanco"
+      }
+    },
+    "2027-10-08": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-10-09": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan Enrique Newman, presbítero y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "San Juan Leonardi, presbítero",
+          "color": "blanco"
+        },
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santos Dionisio, obispo, y compañeros, mártires",
+          "color": "rojo"
+        },
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa María en sábado",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-10-10": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-10-11": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan XXIII, papa",
+        "color": "blanco"
+      }
+    },
+    "2027-10-12": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-10-13": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-10-14": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "jueves",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Calixto I, papa y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-10-15": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santa Teresa de Jesús, virgen y doctora de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "IV"
+    },
+    "2027-10-16": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Eduviges, religiosa",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa Margarita María de Alacoque, virgen",
+          "color": "blanco"
+        },
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa María en sábado",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-10-17": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-10-18": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "lunes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "San Lucas, evangelista",
+        "color": "rojo"
+      }
+    },
+    "2027-10-19": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Pablo de la Cruz, presbítero",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santos Juan de Brébeuf e Isaac Jogues, presbíteros, y co",
+          "color": "rojo"
+        }
+      ]
+    },
+    "2027-10-20": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-10-21": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-10-22": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan Pablo II, papa",
+        "color": "blanco"
+      }
+    },
+    "2027-10-23": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan de Capistrano, presbítero",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa María en sábado",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-10-24": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-10-25": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-10-26": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-10-27": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-10-28": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "jueves",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "Santos Simón y Judas, apóstoles",
+        "color": "rojo"
+      }
+    },
+    "2027-10-29": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-10-30": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-10-31": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-11-01": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Todos los Santos",
+        "color": "blanco"
+      }
+    },
+    "2027-11-02": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-11-03": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Martín de Porres, religioso",
+        "color": "blanco"
+      }
+    },
+    "2027-11-04": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Carlos Borromeo, obispo",
+        "color": "blanco"
+      }
+    },
+    "2027-11-05": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III"
+    },
+    "2027-11-06": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-11-07": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-11-08": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV"
+    },
+    "2027-11-09": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "La Dedicación de la Basílica de Letrán",
+        "color": "blanco"
+      },
+      "salterio": "IV"
+    },
+    "2027-11-10": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San León el Magno, papa y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "IV"
+    },
+    "2027-11-11": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Martín de Tours, obispo",
+        "color": "blanco"
+      }
+    },
+    "2027-11-12": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "viernes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Josafat, obispo y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-11-13": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-11-14": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-11-15": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Alberto Magno, obispo y doctor de la Iglesia",
+        "color": "blanco"
+      }
+    },
+    "2027-11-16": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Gertrudis, virgen",
+        "color": "blanco"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "Santa Margarita de Escocia",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-11-17": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santa Isabel de Hungría, religiosa",
+        "color": "blanco"
+      }
+    },
+    "2027-11-18": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "La Dedicación de las Basílicas de los Santos Pedro y Pablo,",
+        "color": "blanco"
+      }
+    },
+    "2027-11-19": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I"
+    },
+    "2027-11-20": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-11-21": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "Nuestro Señor Jesucristo, Rey del Universo",
+        "color": "blanco"
+      },
+      "salterio": "II"
+    },
+    "2027-11-22": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "lunes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santa Cecilia, virgen y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-11-23": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Clemente I, papa y mártir",
+        "color": "rojo"
+      },
+      "memorias_opcionales": [
+        {
+          "tipo": "memoria_opcional",
+          "nombre": "San Columbano, abad",
+          "color": "blanco"
+        }
+      ]
+    },
+    "2027-11-24": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "miercoles",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santos Andrés Dung-Lac, presbítero, y compañeros, márti",
+        "color": "rojo"
+      }
+    },
+    "2027-11-25": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "jueves",
+      "color": "rojo",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa Catalina de Alejandría, virgen y mártir",
+        "color": "rojo"
+      },
+      "salterio": "II"
+    },
+    "2027-11-26": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II"
+    },
+    "2027-11-27": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "A",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2027,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Santa María en sábado",
+        "color": "blanco"
+      }
+    },
+    "2027-11-28": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2027-11-29": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2027-11-30": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "San Andrés, apóstol",
+        "color": "rojo"
+      }
+    },
+    "2027-12-01": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2027-12-02": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2027-12-03": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Francisco Javier, presbítero",
+        "color": "blanco"
+      }
+    },
+    "2027-12-04": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan Damasceno, presbítero y doctor de la Iglesia",
+        "color": "blanco"
+      }
+    },
+    "2027-12-05": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2027-12-06": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Nicolás, obispo",
+        "color": "blanco"
+      }
+    },
+    "2027-12-07": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Ambrosio, obispo y doctor de la Iglesia",
+        "color": "blanco"
+      },
+      "salterio": "II"
+    },
+    "2027-12-08": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "La Inmaculada Concepción de la Bienaventurada Virgen María",
+        "color": "blanco"
+      },
+      "salterio": "II"
+    },
+    "2027-12-09": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan Diego Cuauhtlatoatzin",
+        "color": "blanco"
+      }
+    },
+    "2027-12-10": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "Nuestra Señora de Loreto",
+        "color": "blanco"
+      }
+    },
+    "2027-12-11": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Dámaso I, papa",
+        "color": "blanco"
+      }
+    },
+    "2027-12-12": {
+      "tiempo": "adviento",
+      "semana": 3,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2027-12-13": {
+      "tiempo": "adviento",
+      "semana": 3,
+      "dia": "lunes",
+      "color": "rojo",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Santa Lucía, virgen y mártir",
+        "color": "rojo"
+      }
+    },
+    "2027-12-14": {
+      "tiempo": "adviento",
+      "semana": 3,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III",
+      "celebracion": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "San Juan de la Cruz, presbítero y doctor de la Iglesia",
+        "color": "blanco"
+      }
+    },
+    "2027-12-15": {
+      "tiempo": "adviento",
+      "semana": 3,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2027-12-16": {
+      "tiempo": "adviento",
+      "semana": 3,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2027-12-17": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2027-12-18": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2027-12-19": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2027-12-20": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2027-12-21": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Pedro Canisio, presbítero y doctor de la Iglesia",
+        "color": "morado"
+      }
+    },
+    "2027-12-22": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2027-12-23": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Juan Cancio, presbítero",
+        "color": "morado"
+      }
+    },
+    "2027-12-24": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2027-12-25": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV",
+      "celebracion": {
+        "tipo": "solemnidad",
+        "nombre": "La Natividad del Señor",
+        "color": "blanco"
+      }
+    },
+    "2027-12-26": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "La Sagrada Familia de Jesús, María y José",
+        "color": "blanco"
+      }
+    },
+    "2027-12-27": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "San Juan, apóstol y evangelista",
+        "color": "blanco"
+      }
+    },
+    "2027-12-28": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "martes",
+      "color": "rojo",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "fiesta",
+        "nombre": "Los Santos Inocentes, mártires",
+        "color": "rojo"
+      }
+    },
+    "2027-12-29": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Tomás Becket, obispo y mártir",
+        "color": "blanco"
+      }
+    },
+    "2027-12-30": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2027-12-31": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I",
+      "celebracion": {
+        "tipo": "memoria_opcional",
+        "nombre": "San Silvestre I, papa",
+        "color": "blanco"
+      }
+    }
+  }
+}

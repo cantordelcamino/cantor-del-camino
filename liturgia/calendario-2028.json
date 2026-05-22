@@ -1,0 +1,3626 @@
+{
+  "_descripcion": "Calendario litúrgico 2028 — Calendario Romano General",
+  "_fuente": "Cálculo matemático (celebraciones pendientes)",
+  "_nota_ciclos": "ciclo_dom y ciclo_fer se asignan DÍA POR DÍA.",
+  "_total_dias": 366,
+  "_nota_pendiente": "Las celebraciones (santoral) aún no están integradas.",
+  "fechas": {
+    "2028-01-01": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "sabado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-01-02": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "domingo",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-01-03": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "lunes",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-01-04": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "martes",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-01-05": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "miercoles",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-01-06": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "jueves",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-01-07": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "viernes",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-01-08": {
+      "tiempo": null,
+      "semana": null,
+      "dia": "sabado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-01-09": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-01-10": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-01-11": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-01-12": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-01-13": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-01-14": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-01-15": {
+      "tiempo": "ordinario",
+      "semana": 1,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-01-16": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-01-17": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-01-18": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-01-19": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-01-20": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-01-21": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-01-22": {
+      "tiempo": "ordinario",
+      "semana": 2,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-01-23": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-01-24": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-01-25": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-01-26": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-01-27": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-01-28": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-01-29": {
+      "tiempo": "ordinario",
+      "semana": 3,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-01-30": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-01-31": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-02-01": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-02-02": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-02-03": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-02-04": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-02-05": {
+      "tiempo": "ordinario",
+      "semana": 4,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-02-06": {
+      "tiempo": "ordinario",
+      "semana": 5,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-02-07": {
+      "tiempo": "ordinario",
+      "semana": 5,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-02-08": {
+      "tiempo": "ordinario",
+      "semana": 5,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-02-09": {
+      "tiempo": "ordinario",
+      "semana": 5,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-02-10": {
+      "tiempo": "ordinario",
+      "semana": 5,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-02-11": {
+      "tiempo": "ordinario",
+      "semana": 5,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-02-12": {
+      "tiempo": "ordinario",
+      "semana": 5,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-02-13": {
+      "tiempo": "ordinario",
+      "semana": 6,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-02-14": {
+      "tiempo": "ordinario",
+      "semana": 6,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-02-15": {
+      "tiempo": "ordinario",
+      "semana": 6,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-02-16": {
+      "tiempo": "ordinario",
+      "semana": 6,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-02-17": {
+      "tiempo": "ordinario",
+      "semana": 6,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-02-18": {
+      "tiempo": "ordinario",
+      "semana": 6,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-02-19": {
+      "tiempo": "ordinario",
+      "semana": 6,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-02-20": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-02-21": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-02-22": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-02-23": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-02-24": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-02-25": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-02-26": {
+      "tiempo": "ordinario",
+      "semana": 7,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-02-27": {
+      "tiempo": "ordinario",
+      "semana": 8,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-02-28": {
+      "tiempo": "ordinario",
+      "semana": 8,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-02-29": {
+      "tiempo": "ordinario",
+      "semana": 8,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-03-01": {
+      "tiempo": "cuaresma",
+      "semana": 0,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-03-02": {
+      "tiempo": "cuaresma",
+      "semana": 0,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-03-03": {
+      "tiempo": "cuaresma",
+      "semana": 0,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-03-04": {
+      "tiempo": "cuaresma",
+      "semana": 0,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-03-05": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-03-06": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-03-07": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-03-08": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-03-09": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-03-10": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-03-11": {
+      "tiempo": "cuaresma",
+      "semana": 1,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-03-12": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-03-13": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-03-14": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-03-15": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-03-16": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-03-17": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-03-18": {
+      "tiempo": "cuaresma",
+      "semana": 2,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-03-19": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-03-20": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-03-21": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-03-22": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-03-23": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-03-24": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-03-25": {
+      "tiempo": "cuaresma",
+      "semana": 3,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-03-26": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-03-27": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-03-28": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-03-29": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-03-30": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-03-31": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-04-01": {
+      "tiempo": "cuaresma",
+      "semana": 4,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-04-02": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-03": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-04": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-05": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-06": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-07": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-08": {
+      "tiempo": "cuaresma",
+      "semana": 5,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-09": {
+      "tiempo": "semana_santa",
+      "semana": null,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-04-10": {
+      "tiempo": "semana_santa",
+      "semana": null,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-04-11": {
+      "tiempo": "semana_santa",
+      "semana": null,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-04-12": {
+      "tiempo": "semana_santa",
+      "semana": null,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-04-13": {
+      "tiempo": "triduo",
+      "semana": null,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-04-14": {
+      "tiempo": "triduo",
+      "semana": null,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-04-15": {
+      "tiempo": "triduo",
+      "semana": null,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028
+    },
+    "2028-04-16": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-17": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-18": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-19": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-20": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-21": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-22": {
+      "tiempo": "pascua",
+      "semana": 1,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-04-23": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-04-24": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-04-25": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-04-26": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-04-27": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-04-28": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-04-29": {
+      "tiempo": "pascua",
+      "semana": 2,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-04-30": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-05-01": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-05-02": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-05-03": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-05-04": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-05-05": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-05-06": {
+      "tiempo": "pascua",
+      "semana": 3,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-05-07": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-05-08": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-05-09": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-05-10": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-05-11": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-05-12": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-05-13": {
+      "tiempo": "pascua",
+      "semana": 4,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-05-14": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-05-15": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-05-16": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-05-17": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-05-18": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-05-19": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-05-20": {
+      "tiempo": "pascua",
+      "semana": 5,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-05-21": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-05-22": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-05-23": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-05-24": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-05-25": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-05-26": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-05-27": {
+      "tiempo": "pascua",
+      "semana": 6,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-05-28": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-05-29": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-05-30": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-05-31": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-01": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-02": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-03": {
+      "tiempo": "pascua",
+      "semana": 7,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-04": {
+      "tiempo": "pascua",
+      "semana": 8,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-06-05": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-06-06": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-06-07": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-06-08": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-06-09": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-06-10": {
+      "tiempo": "ordinario",
+      "semana": 9,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-06-11": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-06-12": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-06-13": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-06-14": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-06-15": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-06-16": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-06-17": {
+      "tiempo": "ordinario",
+      "semana": 10,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-06-18": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-19": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-20": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-21": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-22": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-23": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-24": {
+      "tiempo": "ordinario",
+      "semana": 11,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-06-25": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-06-26": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-06-27": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-06-28": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-06-29": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-06-30": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-07-01": {
+      "tiempo": "ordinario",
+      "semana": 12,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-07-02": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-07-03": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-07-04": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-07-05": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-07-06": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-07-07": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-07-08": {
+      "tiempo": "ordinario",
+      "semana": 13,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-07-09": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-07-10": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-07-11": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-07-12": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-07-13": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-07-14": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-07-15": {
+      "tiempo": "ordinario",
+      "semana": 14,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-07-16": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-07-17": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-07-18": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-07-19": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-07-20": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-07-21": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-07-22": {
+      "tiempo": "ordinario",
+      "semana": 15,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-07-23": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-07-24": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-07-25": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-07-26": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-07-27": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-07-28": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-07-29": {
+      "tiempo": "ordinario",
+      "semana": 16,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-07-30": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-07-31": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-08-01": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-08-02": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-08-03": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-08-04": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-08-05": {
+      "tiempo": "ordinario",
+      "semana": 17,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-08-06": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-08-07": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-08-08": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-08-09": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-08-10": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-08-11": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-08-12": {
+      "tiempo": "ordinario",
+      "semana": 18,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-08-13": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-08-14": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-08-15": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-08-16": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-08-17": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-08-18": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-08-19": {
+      "tiempo": "ordinario",
+      "semana": 19,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-08-20": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-08-21": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-08-22": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-08-23": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-08-24": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-08-25": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-08-26": {
+      "tiempo": "ordinario",
+      "semana": 20,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-08-27": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-08-28": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-08-29": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-08-30": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-08-31": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-09-01": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-09-02": {
+      "tiempo": "ordinario",
+      "semana": 21,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-09-03": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-09-04": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-09-05": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-09-06": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-09-07": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-09-08": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-09-09": {
+      "tiempo": "ordinario",
+      "semana": 22,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-09-10": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-09-11": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-09-12": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-09-13": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-09-14": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-09-15": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-09-16": {
+      "tiempo": "ordinario",
+      "semana": 23,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-09-17": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-09-18": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-09-19": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-09-20": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-09-21": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-09-22": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-09-23": {
+      "tiempo": "ordinario",
+      "semana": 24,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-09-24": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-09-25": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-09-26": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-09-27": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-09-28": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-09-29": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-09-30": {
+      "tiempo": "ordinario",
+      "semana": 25,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-10-01": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-10-02": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-10-03": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-10-04": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-10-05": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-10-06": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-10-07": {
+      "tiempo": "ordinario",
+      "semana": 26,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-10-08": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-10-09": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-10-10": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-10-11": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-10-12": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-10-13": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-10-14": {
+      "tiempo": "ordinario",
+      "semana": 27,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-10-15": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-10-16": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-10-17": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-10-18": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-10-19": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-10-20": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-10-21": {
+      "tiempo": "ordinario",
+      "semana": 28,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-10-22": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-10-23": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-10-24": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-10-25": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-10-26": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-10-27": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-10-28": {
+      "tiempo": "ordinario",
+      "semana": 29,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-10-29": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-10-30": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-10-31": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-11-01": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-11-02": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-11-03": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-11-04": {
+      "tiempo": "ordinario",
+      "semana": 30,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-11-05": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-11-06": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-11-07": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-11-08": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-11-09": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-11-10": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-11-11": {
+      "tiempo": "ordinario",
+      "semana": 31,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "III"
+    },
+    "2028-11-12": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-11-13": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-11-14": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-11-15": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-11-16": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-11-17": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-11-18": {
+      "tiempo": "ordinario",
+      "semana": 32,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "IV"
+    },
+    "2028-11-19": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-11-20": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-11-21": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-11-22": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-11-23": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-11-24": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-11-25": {
+      "tiempo": "ordinario",
+      "semana": 33,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "I"
+    },
+    "2028-11-26": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "domingo",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-11-27": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "lunes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-11-28": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "martes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-11-29": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "miercoles",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-11-30": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "jueves",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-12-01": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "viernes",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-12-02": {
+      "tiempo": "ordinario",
+      "semana": 34,
+      "dia": "sabado",
+      "color": "verde",
+      "ciclo_dom": "B",
+      "ciclo_fer": "II",
+      "anio_liturgico": 2028,
+      "salterio": "II"
+    },
+    "2028-12-03": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "I"
+    },
+    "2028-12-04": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "I"
+    },
+    "2028-12-05": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "I"
+    },
+    "2028-12-06": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "I"
+    },
+    "2028-12-07": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "I"
+    },
+    "2028-12-08": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "I"
+    },
+    "2028-12-09": {
+      "tiempo": "adviento",
+      "semana": 1,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "I"
+    },
+    "2028-12-10": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "II"
+    },
+    "2028-12-11": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "II"
+    },
+    "2028-12-12": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "II"
+    },
+    "2028-12-13": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "II"
+    },
+    "2028-12-14": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "II"
+    },
+    "2028-12-15": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "II"
+    },
+    "2028-12-16": {
+      "tiempo": "adviento",
+      "semana": 2,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029,
+      "salterio": "II"
+    },
+    "2028-12-17": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-18": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "lunes",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-19": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "martes",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-20": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "miercoles",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-21": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "jueves",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-22": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "viernes",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-23": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "sabado",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-24": {
+      "tiempo": "adviento_octava",
+      "semana": null,
+      "dia": "domingo",
+      "color": "morado",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-25": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "lunes",
+      "color": "blanco",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-26": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "martes",
+      "color": "blanco",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-27": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "miercoles",
+      "color": "blanco",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-28": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "jueves",
+      "color": "blanco",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-29": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "viernes",
+      "color": "blanco",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-30": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "sabado",
+      "color": "blanco",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    },
+    "2028-12-31": {
+      "tiempo": "navidad",
+      "semana": null,
+      "dia": "domingo",
+      "color": "blanco",
+      "ciclo_dom": "C",
+      "ciclo_fer": "I",
+      "anio_liturgico": 2029
+    }
+  }
+}
