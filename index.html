@@ -417,7 +417,7 @@ footer{border-top:1px solid var(--bdr);background:var(--bg2);text-align:center;p
 // ── LITURGIA DATA — carga dinámica por mes ────────────────────────
 // Los JSON viven en /liturgia/YYYY-MM.json
 // El sistema carga el mes actual y el siguiente para cubrir cambios de mes
-var LITURGIA = { dias: {} };
+var LITURGIA = { dias: {}, calendario: {}, oficioOrdinario: {}, santoral: {}, santoralMovil: {}, salterio: {} };
 var _liturgiaLoaded = false;
 
 function getMonthKey(d) {
@@ -442,13 +442,31 @@ async function loadLiturgia() {
     } catch(e) { return null; }
   }
 
-  var [thisDias, nextDias] = await Promise.all([
+  async function fetchJSON(url) {
+    try {
+      var res = await fetch(url);
+      if (!res.ok) return null;
+      return await res.json();
+    } catch(e) { return null; }
+  }
+
+  var [thisDias, nextDias, calendario, ordinario, santoral, santoralMovil, salterio] = await Promise.all([
     fetchMonth(thisMonth),
-    fetchMonth(nextMonth)
+    fetchMonth(nextMonth),
+    fetchJSON('./liturgia/calendario-' + today.getFullYear() + '.json'),
+    fetchJSON('./liturgia/oficio-lectura/ordinario.json'),
+    fetchJSON('./liturgia/santoral.json'),
+    fetchJSON('./liturgia/santoral-movil.json'),
+    fetchJSON('./liturgia/salterio.json')
   ]);
 
   if (thisDias) Object.assign(LITURGIA.dias, thisDias);
   if (nextDias) Object.assign(LITURGIA.dias, nextDias);
+  if (calendario) LITURGIA.calendario = calendario.fechas || {};
+  if (ordinario) LITURGIA.oficioOrdinario = ordinario.semanas || {};
+  if (santoral) LITURGIA.santoral = santoral.fechas || {};
+  if (santoralMovil) LITURGIA.santoralMovil = santoralMovil.celebraciones || {};
+  if (salterio) LITURGIA.salterio = salterio || {};
   _liturgiaLoaded = true;
 }
 
@@ -510,19 +528,54 @@ function versiculo(V,R){return '<div class="vcl"><span class="vm">V.</span><span
 function pater(){return '<div class="pater">Padre nuestro, que estás en el cielo,<br>santificado sea tu nombre;<br>venga a nosotros tu reino;<br>hágase tu voluntad en la tierra como en el cielo.<br>Danos hoy nuestro pan de cada día;<br>perdona nuestras ofensas,<br>como también nosotros perdonamos<br>a los que nos ofenden;<br>no nos dejes caer en tentación,<br>y líbranos del mal.</div>';}
 function oracion(txt){if(!txt||txt.startsWith('['))return '';return '<div class="pblock"><div style="font-family:var(--fn-lit);font-size:1rem;color:var(--text);line-height:1.9;margin-bottom:10px">'+txt+'</div>'+versiculo('','<span class="amen">Amén.</span>')+'</div>';}
 // ── Render a psalm/canticle object (v2 JSON) or string (v1 JSON)
-function renderPsalmItem(item, labelTxt){
+// Texto estándar del Gloria al Padre (se añade automáticamente al final de cada salmo/cántico)
+var GLORIA_PADRE = "Gloria al Padre, y al Hijo, y al Espíritu Santo.\nComo era en el principio, ahora y siempre, por los siglos de los siglos. Amén.";
+
+// Determina si un salmo/cántico debe llevar Gloria (excepciones según la liturgia)
+function llevaGloria(item, tiempo){
+  // Triduo Pascual: nunca lleva Gloria
+  if(tiempo === 'triduo') return false;
+  // Cántico de los Tres Jóvenes (Dn 3, 52-90) no lleva Gloria
+  var ref = (item && (item.ref || item.referencia)) || '';
+  if(/^Dn\s*3,\s*5[2-9]|^Dn\s*3,\s*[67-9][0-9]/.test(ref)) return false;
+  return true;
+}
+
+// Quita "Aleluya" (y variantes) de las antífonas en Cuaresma
+function adaptarAntifona(antifona, tiempo){
+  if(!antifona) return antifona;
+  if(tiempo !== 'cuaresma' && tiempo !== 'semana_santa') return antifona;
+  // Quitar "Aleluya." al final, ", aleluya." o "Aleluya. " al inicio
+  var s = antifona;
+  s = s.replace(/\s*[Aa]leluya\s*\.\s*$/, '.');
+  s = s.replace(/,\s*[Aa]leluya\s*\.\s*$/, '.');
+  s = s.replace(/^\s*[Aa]leluya\s*\.\s*/, '');
+  s = s.replace(/\s*[Aa]leluya\s*$/, '');
+  // Limpiar puntuación final repetida
+  s = s.replace(/\.\.+/g, '.');
+  s = s.trim();
+  // Capitalizar primera letra si quedó minúscula
+  if(s.length > 0) s = s.charAt(0).toUpperCase() + s.slice(1);
+  return s;
+}
+
+function renderPsalmItem(item, labelTxt, tiempo){
   if(!item) return '';
   // v1: item is a plain string
   if(typeof item === 'string'){
     return '<div class="stitle">'+item+'</div>';
   }
-  // v2: item is an object with numero, titulo, antifona, texto, gloria
+  // v2/v3: item is an object with numero/ref/referencia, titulo, antifona, texto, gloria
   var h='';
-  var heading=(item.numero?'<strong>Salmo '+item.numero+'</strong> ':'')+
-              (item.titulo?'<em>'+item.titulo+'</em>':'');
-  if(item.referencia){heading='<strong>'+item.referencia+'</strong>'+(item.titulo?' — <em>'+item.titulo+'</em>':'');}
+  var refTxt = item.ref || item.referencia || (item.numero ? 'Salmo '+item.numero : '');
+  var heading = refTxt ? '<strong>'+refTxt+'</strong>' : '';
+  if(item.titulo) heading += (heading?' — ':'')+'<em>'+item.titulo+'</em>';
   if(heading) h+='<div class="stitle">'+heading+'</div>';
-  if(item.antifona) h+=ant(item.antifona);
+  
+  // Antífona (adaptada por tiempo litúrgico)
+  var antifTexto = adaptarAntifona(item.antifona, tiempo);
+  if(antifTexto) h+=ant(antifTexto);
+  
   if(item.texto){
     var lines=item.texto.split('\n');
     var psalmHtml='<div class="psalm">';
@@ -538,20 +591,30 @@ function renderPsalmItem(item, labelTxt){
     psalmHtml+=strophe+'</div></div>';
     h+=psalmHtml;
   }
-  if(item.gloria) h+='<div class="gloria">'+item.gloria+'</div>';
-  if(item.antifona) h+=ant(item.antifona);
+  
+  // Gloria al Padre — automático con regla de excepciones, o el provisto explícitamente
+  if(item.gloria){
+    h+='<div class="gloria">'+item.gloria+'</div>';
+  } else if(llevaGloria(item, tiempo)){
+    h+='<div class="gloria">'+GLORIA_PADRE.replace(/\n/g,'<br>')+'</div>';
+  }
+  
+  // Repetir antífona al final
+  if(antifTexto) h+=ant(antifTexto);
   return h;
 }
 
-function salmodia_block(sal){
+function salmodia_block(sal, tiempo){
   if(!sal) return '';
   var h='';
+  // Handle v3 structure (salterio.json): salmo_1, cantico_at, salmo_2
+  if(sal.salmo_1!==undefined) h+=renderPsalmItem(sal.salmo_1,'Salmo', tiempo);
+  if(sal.cantico_at!==undefined) h+=renderPsalmItem(sal.cantico_at,'Cántico', tiempo);
   // Handle v2 structure: salmo_1, cantico, salmo_2
-  if(sal.salmo_1!==undefined) h+=renderPsalmItem(sal.salmo_1,'Salmo');
-  if(sal.cantico!==undefined)  h+=renderPsalmItem(sal.cantico,'Cántico');
-  if(sal.cantico_ot!==undefined) h+=renderPsalmItem(sal.cantico_ot,'Cántico');
-  if(sal.cantico_nt!==undefined) h+=renderPsalmItem(sal.cantico_nt,'Cántico');
-  if(sal.salmo_2!==undefined)  h+=renderPsalmItem(sal.salmo_2,'Salmo');
+  if(sal.cantico!==undefined)  h+=renderPsalmItem(sal.cantico,'Cántico', tiempo);
+  if(sal.cantico_ot!==undefined) h+=renderPsalmItem(sal.cantico_ot,'Cántico', tiempo);
+  if(sal.cantico_nt!==undefined) h+=renderPsalmItem(sal.cantico_nt,'Cántico', tiempo);
+  if(sal.salmo_2!==undefined)  h+=renderPsalmItem(sal.salmo_2,'Salmo', tiempo);
   if(sal.nota && typeof sal.nota==='string') h+='<div style="font-size:0.8rem;color:var(--text3);font-style:italic;margin-top:10px">'+sal.nota+'</div>';
   return h;
 }
@@ -579,32 +642,14 @@ function buildLaudes(laud, shortDate, misa, today){
   h+='<h1 class="hour-title">Laudes</h1>';
   h+='<p class="hour-sub">Oración de la Mañana · '+shortDate+'</p>';
 
-  // ── Helpers para enlaces externos (disponibles en todo el flujo) ──
-  var mesesEng=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
-  var breviarioURL='';
-  if(today && today.getFullYear){
-    var yyyy=today.getFullYear();
-    var mes3=mesesEng[today.getMonth()];
-    var dd=today.getDate();
-    breviarioURL='https://liturgiadelashoras.github.io/sync/'+yyyy+'/'+mes3+'/'+dd+'/oficio.htm';
+  // ── Info litúrgica del día (calendario) — disponible en toda la función ──
+  function fechaISO(d){
+    var y=d.getFullYear(), m=d.getMonth()+1, dd=d.getDate();
+    return y+'-'+(m<10?'0':'')+m+'-'+(dd<10?'0':'')+dd;
   }
-  function linkExterno(url, etiqueta, fuente, fallback){
-    if(!url)return'<div style="font-size:0.82rem;color:var(--text3);font-style:italic;margin-top:10px">'+(fallback||etiqueta)+'</div>';
-    return'<div style="margin-top:14px;text-align:center">'+
-      '<a href="'+url+'" target="_blank" rel="noopener" '+
-      'style="display:inline-block;padding:10px 18px;background:var(--gold,#c9973a);color:#fff;text-decoration:none;border-radius:6px;font-weight:600;font-size:0.9rem;box-shadow:0 2px 6px rgba(0,0,0,0.15);transition:transform .15s ease,box-shadow .15s ease" '+
-      'onmouseover="this.style.transform=\'translateY(-1px)\';this.style.boxShadow=\'0 4px 10px rgba(0,0,0,0.2)\'" '+
-      'onmouseout="this.style.transform=\'\';this.style.boxShadow=\'0 2px 6px rgba(0,0,0,0.15)\'">'+
-      etiqueta+'</a>'+
-      (fuente?'<div style="font-size:0.72rem;color:var(--text3);margin-top:6px;font-style:italic">Fuente: '+fuente+'</div>':'')+
-      '</div>';
-  }
-  function linkBreviario(fallback){
-    return linkExterno(breviarioURL, '📖 Leer texto completo en el Breviario', 'liturgiadelashoras.github.io', fallback);
-  }
-  function linkEvangelioVN(fallback){
-    return linkExterno('https://www.vaticannews.va/es/evangelio-de-hoy.html', '✝️ Leer Evangelio del día', 'Vatican News (Biblia de Jerusalén)', fallback);
-  }
+  var infoLit = (LITURGIA.calendario && today) ? LITURGIA.calendario[fechaISO(today)] : null;
+  var celebracion = infoLit && infoLit.celebracion;
+  var tiempoLit = (infoLit && infoLit.tiempo) || '';
 
   // 1. Saludo inicial
   var vi=laud.verso_inicial||{};
@@ -628,7 +673,7 @@ function buildLaudes(laud, shortDate, misa, today){
     h+='<div class="gloria">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</div>';
     if(inv.antifona){h+=ant(inv.antifona);}
   } else {
-    h+=linkBreviario('Texto del Salmo 94 — ver Breviario Romano.');
+    h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Texto del Salmo 94 — contenido pendiente.</div>';
   }
   h+='</div>';
 
@@ -639,8 +684,30 @@ function buildLaudes(laud, shortDate, misa, today){
   else{h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic">'+(himno.nota||'Ver Himnario del Breviario Romano.')+'</div>';}
   h+='</div>';
 
-  // 4. Salmodia
-  h+='<div class="pblock">'+label('Salmodia')+salmodia_block(laud.salmodia)+'</div>';
+  // 4. Salmodia — resuelve desde salterio.json según día/salterio del calendario
+  var salmodiaContenido = null;
+  
+  // Prioridad 1: si la celebración (memoria/fiesta) tiene salmodia propia
+  if(celebracion && laud.salmodia && Object.keys(laud.salmodia).length > 0){
+    salmodiaContenido = laud.salmodia;
+  }
+  // Prioridad 2: si hay salmodia en el JSON del día (compatibilidad con datos existentes)
+  else if(laud.salmodia && Object.keys(laud.salmodia).length > 0){
+    salmodiaContenido = laud.salmodia;
+  }
+  // Prioridad 3: tomar del salterio según día e info litúrgica
+  if(!salmodiaContenido && infoLit && LITURGIA.salterio){
+    var salterioNum = infoLit.salterio; // "I" | "II" | "III" | "IV"
+    var diaSem = infoLit.dia; // "lunes" | "martes" | ...
+    if(salterioNum && diaSem){
+      var salterioObj = LITURGIA.salterio['salterio_'+salterioNum];
+      if(salterioObj && salterioObj.laudes && salterioObj.laudes[diaSem]){
+        salmodiaContenido = salterioObj.laudes[diaSem];
+      }
+    }
+  }
+  
+  h+='<div class="pblock">'+label('Salmodia'+(infoLit && infoLit.salterio ? ' — Salterio '+infoLit.salterio : ''))+salmodia_block(salmodiaContenido, tiempoLit)+'</div>';
 
   // 5. Lectura breve
   var lb=laud.lectura_breve||{};
@@ -649,31 +716,99 @@ function buildLaudes(laud, shortDate, misa, today){
   // Ad
   h+=adBlock('2222222222');
 
-  // 6. Oficio de Lectura — Primera y Segunda lectura
-  // Detectar año litúrgico ferial: par=Año II, impar=Año I
-  var anioFerial=(today && today.getFullYear) ? (today.getFullYear()%2===0 ? 'II' : 'I') : 'II';
-  var ofl=laud.oficio_lectura||{};
-  
-  h+='<div class="pblock">'+label('Oficio de Lectura — Año '+anioFerial)+'</div>';
+  // 6. Oficio de Lectura — usa calendario litúrgico + archivo de tiempo
+  // (infoLit y celebracion ya están definidos arriba)
+
+  // Año litúrgico ferial: tomar del calendario del día (cambia en cada I Dom Adviento)
+  // Si el calendario no tiene el dato, fallback al cálculo por año civil (par=II, impar=I)
+  var anioFerial = (infoLit && infoLit.ciclo_fer) ||
+                   ((today && today.getFullYear) ? (today.getFullYear()%2===0 ? 'II' : 'I') : 'II');
+  var clavAnio = anioFerial==='I' ? 'a1' : 'a2';
+
+  // ── Aplicar jerarquía: Solemnidad > Fiesta > Memoria > Feria ──
+  // Buscar contenido del Oficio según celebración o tiempo
+  var oficioContenido = null;
+  var origenContenido = '';
+
+  if(celebracion){
+    if(celebracion.origen==='santoral_fijo' && LITURGIA.santoral){
+      var celSt = LITURGIA.santoral[celebracion.clave];
+      if(celSt && celSt.oficio_lectura){
+        oficioContenido = celSt.oficio_lectura;
+        origenContenido = 'santoral';
+      }
+    } else if(celebracion.origen==='santoral_movil' && LITURGIA.santoralMovil){
+      var celMov = LITURGIA.santoralMovil[celebracion.clave];
+      if(celMov && celMov.info && celMov.info.oficio_lectura){
+        oficioContenido = celMov.info.oficio_lectura;
+        origenContenido = 'santoral_movil';
+      }
+    }
+  }
+
+  // Si no hay contenido del santoral (o no hay celebración), buscar la feria
+  if(!oficioContenido && infoLit){
+    if(infoLit.tiempo==='ordinario' && LITURGIA.oficioOrdinario){
+      var sem = LITURGIA.oficioOrdinario[String(infoLit.semana)];
+      if(sem && sem[infoLit.dia]){
+        oficioContenido = sem[infoLit.dia][clavAnio] || sem[infoLit.dia]['a2'] || sem[infoLit.dia]['a1'];
+        origenContenido = 'ordinario';
+      }
+    }
+    // En el futuro: pascua, adviento, cuaresma, etc.
+  }
+
+  // Fallback al JSON del mes (compatibilidad con datos previos)
+  var ofl = laud.oficio_lectura || {};
+  if(!oficioContenido && (ofl.primera_lectura || ofl.segunda_lectura)){
+    oficioContenido = {
+      primera_lectura: (anioFerial==='I' && ofl.primera_lectura_a1) ? ofl.primera_lectura_a1 :
+                       (anioFerial==='II' && ofl.primera_lectura_a2) ? ofl.primera_lectura_a2 :
+                       ofl.primera_lectura,
+      segunda_lectura: (anioFerial==='I' && ofl.segunda_lectura_a1) ? ofl.segunda_lectura_a1 :
+                       (anioFerial==='II' && ofl.segunda_lectura_a2) ? ofl.segunda_lectura_a2 :
+                       ofl.segunda_lectura
+    };
+    origenContenido = 'mes';
+  }
+
+  // Etiqueta con info litúrgica y celebración
+  var etiquetaOficio = 'Oficio de Lectura';
+  if(celebracion){
+    etiquetaOficio = 'Oficio de Lectura — '+celebracion.nombre;
+  } else if(infoLit && infoLit.tiempo){
+    var nomTiempo = {
+      'ordinario':'T. Ordinario','adviento':'Adviento','adviento_octava':'Adviento',
+      'navidad':'Navidad','cuaresma':'Cuaresma','semana_santa':'Semana Santa','pascua':'Pascua'
+    }[infoLit.tiempo] || infoLit.tiempo;
+    if(infoLit.semana){
+      etiquetaOficio = 'Oficio de Lectura — '+nomTiempo+' · Sem. '+infoLit.semana+' · Año '+anioFerial;
+    } else {
+      etiquetaOficio = 'Oficio de Lectura — '+nomTiempo+' · Año '+anioFerial;
+    }
+  }
+  h+='<div class="pblock">'+label(etiquetaOficio)+'</div>';
+
+  // Mensaje pendiente (cuando no hay datos)
+  function pendiente(texto){
+    return '<div style="padding:14px;background:var(--bg3);border-left:3px solid var(--bdr2);border-radius:4px;margin-top:10px"><div style="font-size:0.88rem;color:var(--text2);font-style:italic">'+texto+'</div></div>';
+  }
 
   // 6a. Primera lectura del Oficio
-  var pl1=ofl.primera_lectura||{};
-  // Soporte para variante año I / año II en primera lectura (opcional)
-  if(anioFerial==='I' && ofl.primera_lectura_a1) pl1=ofl.primera_lectura_a1;
-  if(anioFerial==='II' && ofl.primera_lectura_a2) pl1=ofl.primera_lectura_a2;
+  var pl1 = (oficioContenido && oficioContenido.primera_lectura) || {};
   h+='<div class="pblock">'+label('Primera Lectura');
-  if(pl1.ref||pl1.referencia){
+  if(pl1.ref || pl1.referencia){
     h+='<div class="gospel-card">';
     h+='<div class="gospel-ref">'+(pl1.ref||pl1.referencia)+'</div>';
     if(pl1.titulo)h+='<div class="gospel-titulo">'+pl1.titulo+'</div>';
     if(pl1.texto){
       h+='<div style="font-family:var(--fn-lit);font-size:1.02rem;line-height:1.9;margin-top:12px">'+pl1.texto.replace(/\n/g,'<br>')+'</div>';
     } else {
-      h+=linkBreviario('Texto completo en Breviario.');
+      h+=pendiente('Contenido pendiente.');
     }
     h+='</div>';
-    // Responsorio de la primera lectura
-    if(pl1.responsorio){
+    // Responsorio
+    if(pl1.responsorio && pl1.responsorio.R){
       var r1=pl1.responsorio;
       var rh1='<div class="vcl" style="margin-top:12px">';
       if(r1.R)rh1+='<span class="vm">R.</span><span class="vt">'+r1.R+'</span>';
@@ -683,16 +818,14 @@ function buildLaudes(laud, shortDate, misa, today){
       h+=rh1;
     }
   } else {
-    h+=linkBreviario('Primera lectura del Oficio (Año '+anioFerial+')');
+    h+=pendiente('Primera lectura del Oficio (Año '+anioFerial+') — contenido pendiente.');
   }
   h+='</div>';
 
   // 6b. Segunda lectura del Oficio
-  var pl2=ofl.segunda_lectura||{};
-  if(anioFerial==='I' && ofl.segunda_lectura_a1) pl2=ofl.segunda_lectura_a1;
-  if(anioFerial==='II' && ofl.segunda_lectura_a2) pl2=ofl.segunda_lectura_a2;
+  var pl2 = (oficioContenido && oficioContenido.segunda_lectura) || {};
   h+='<div class="pblock">'+label('Segunda Lectura');
-  if(pl2.fuente||pl2.titulo||pl2.texto){
+  if(pl2.fuente || pl2.titulo || pl2.texto){
     h+='<div class="gospel-card">';
     if(pl2.fuente)h+='<div class="gospel-ref">'+pl2.fuente+'</div>';
     if(pl2.referencia)h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic;margin-bottom:6px">('+pl2.referencia+')</div>';
@@ -700,11 +833,11 @@ function buildLaudes(laud, shortDate, misa, today){
     if(pl2.texto){
       h+='<div style="font-family:var(--fn-lit);font-size:1.02rem;line-height:1.9;margin-top:12px">'+pl2.texto.replace(/\n/g,'<br>')+'</div>';
     } else {
-      h+=linkBreviario('Texto completo en Breviario.');
+      h+=pendiente('Contenido pendiente.');
     }
     h+='</div>';
-    // Responsorio de la segunda lectura
-    if(pl2.responsorio){
+    // Responsorio
+    if(pl2.responsorio && pl2.responsorio.R){
       var r2=pl2.responsorio;
       var rh2='<div class="vcl" style="margin-top:12px">';
       if(r2.R)rh2+='<span class="vm">R.</span><span class="vt">'+r2.R+'</span>';
@@ -714,7 +847,7 @@ function buildLaudes(laud, shortDate, misa, today){
       h+=rh2;
     }
   } else {
-    h+=linkBreviario('Segunda lectura del Oficio');
+    h+=pendiente('Segunda lectura del Oficio — contenido pendiente.');
   }
   h+='</div>';
 
@@ -726,7 +859,7 @@ function buildLaudes(laud, shortDate, misa, today){
     h+='<div class="gospel-ref">'+(ev.ref||ev.referencia||'—')+'</div>';
     if(ev.titulo)h+='<div class="gospel-titulo">'+ev.titulo+'</div>';
     if(ev.texto){h+='<div style="font-family:var(--fn-lit);font-size:1.02rem;line-height:1.9;margin-top:12px;font-style:italic">'+ev.texto.replace(/\n/g,'<br>')+'</div>';}
-    else{h+=linkEvangelioVN('Texto del evangelio — Biblia de Jerusalén.');}
+    else{h+=pendiente('Texto del Evangelio — contenido pendiente.');}
     if(ev.nota)h+='<div class="gospel-nota">'+ev.nota+'</div>';
     h+='</div></div>';
   }
@@ -968,28 +1101,59 @@ async function render(){
   var dayData=LITURGIA.dias&&LITURGIA.dias[todayKey];
 
   if(!dayData){
-    // No day data — use season color
-    var fallbackColor = SEASON_DEFAULT_COLOR[info.season] || 'verde';
+    // No day data — verificar si hay celebración del calendario
+    var infoSinDia = (LITURGIA.calendario && today) ? LITURGIA.calendario[todayKey] : null;
+    var celSinDia = infoSinDia && infoSinDia.celebracion;
+    var fallbackColor = (celSinDia && celSinDia.color) || SEASON_DEFAULT_COLOR[info.season] || 'verde';
+    if(isMarian(celSinDia && celSinDia.nombre || '')) fallbackColor = 'azul';
     applyLiturgicalColor(fallbackColor);
+    var headerHtml = '<div style="font-family:var(--fn-brand);font-size:1.5rem;color:var(--text2);margin-bottom:12px">'+shortDate+'</div>';
+    if(celSinDia){
+      headerHtml += '<div class="cel-banner show"><span class="cel-dot"></span><div class="cel-info"><div class="cel-rango">'+celSinDia.tipo.replace('_',' ')+'</div><div class="cel-nombre">'+celSinDia.nombre+'</div></div></div>';
+    }
     col.innerHTML='<div class="no-data">'
-      +'<div style="font-family:var(--fn-brand);font-size:1.5rem;color:var(--text2);margin-bottom:12px">'+shortDate+'</div>'
+      +headerHtml
       +'<p>El contenido litúrgico de este día aún no ha sido publicado.</p>'
       +'<p style="margin-top:8px;font-size:0.85rem">Visita nuestro canal de YouTube mientras tanto.</p>'
       +'</div>';
     return;
   }
 
-  var rango=dayData.rango||'';
-  var nombre=dayData.nombre_celebracion||'';
-  var isSpecial=rango==='Solemnidad'||rango==='Fiesta'||rango==='Memoria obligatoria';
+  // ── Información de la celebración (preferir calendario litúrgico) ──
+  function fechaISO_today(d){
+    var y=d.getFullYear(), m=d.getMonth()+1, dd=d.getDate();
+    return y+'-'+(m<10?'0':'')+m+'-'+(dd<10?'0':'')+dd;
+  }
+  var infoLitDia = (LITURGIA.calendario && today) ? LITURGIA.calendario[fechaISO_today(today)] : null;
+  var celebracionDia = infoLitDia && infoLitDia.celebracion;
 
-  // Apply liturgical color — Marian days get blue regardless of official white
-  var litColor = (dayData.color_liturgico || '').toLowerCase();
+  // Si hay celebración del calendario, prevalece sobre los datos del JSON del día
+  var rango = dayData.rango || '';
+  var nombre = dayData.nombre_celebracion || '';
+  if(celebracionDia){
+    var nombreTipo = {
+      'solemnidad': 'Solemnidad',
+      'fiesta': 'Fiesta',
+      'memoria_obligatoria': 'Memoria obligatoria',
+      'memoria_opcional': 'Memoria opcional',
+      'conmemoracion': 'Conmemoración'
+    };
+    rango = nombreTipo[celebracionDia.tipo] || rango;
+    nombre = celebracionDia.nombre || nombre;
+  }
+  var isSpecial = rango==='Solemnidad' || rango==='Fiesta' || rango==='Memoria obligatoria';
+
+  // Apply liturgical color — preferir el del calendario, después dayData, después estación
+  var litColor = '';
+  if(celebracionDia && celebracionDia.color){
+    litColor = celebracionDia.color.toLowerCase();
+  } else if(dayData.color_liturgico){
+    litColor = dayData.color_liturgico.toLowerCase();
+  }
   if(!LITURGICAL_PALETTES[litColor]){
     litColor = SEASON_DEFAULT_COLOR[info.season] || 'verde';
   }
-  var celebName = dayData.nombre_celebracion || '';
-  if (isMarian(celebName)) litColor = 'azul';
+  if (isMarian(nombre)) litColor = 'azul';
   applyLiturgicalColor(litColor);
 
   var html='';
