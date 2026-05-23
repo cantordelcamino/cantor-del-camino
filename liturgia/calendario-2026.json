@@ -1790,7 +1790,9 @@
       "celebracion": {
         "tipo": "memoria_obligatoria",
         "nombre": "Bienaventurada Virgen María, Madre de la Iglesia",
-        "color": "blanco"
+        "color": "blanco",
+        "clave": "maria_madre_iglesia",
+        "origen": "santoral_movil"
       },
       "salterio": "IV"
     },
@@ -1876,7 +1878,9 @@
       "celebracion": {
         "tipo": "solemnidad",
         "nombre": "La Santísima Trinidad",
-        "color": "blanco"
+        "color": "blanco",
+        "clave": "santisima_trinidad",
+        "origen": "santoral_movil"
       }
     },
     "2026-06-01": {
@@ -2048,7 +2052,9 @@
       "celebracion": {
         "tipo": "solemnidad",
         "nombre": "El Sagrado Corazón de Jesús",
-        "color": "blanco"
+        "color": "blanco",
+        "clave": "sagrado_corazon",
+        "origen": "santoral_movil"
       }
     },
     "2026-06-13": {
@@ -2062,7 +2068,9 @@
       "celebracion": {
         "tipo": "memoria_obligatoria",
         "nombre": "El Inmaculado Corazón de María",
-        "color": "blanco"
+        "color": "blanco",
+        "clave": "inmaculado_corazon_maria",
+        "origen": "santoral_movil"
       },
       "salterio": "II"
     },

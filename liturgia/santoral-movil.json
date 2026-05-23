@@ -1,0 +1,494 @@
+{
+  "_descripcion": "Celebraciones móviles del calendario litúrgico (calculadas desde Pascua o desde fechas fijas)",
+  "_nota": "Las claves identifican la celebración; el campo 'calculo' describe cómo se ubica en el calendario.",
+  "celebraciones": {
+    "maria_madre_iglesia": {
+      "calculo": "pentecostes + 1 dia (lunes)",
+      "info": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "Bienaventurada Virgen María, Madre de la Iglesia",
+        "color": "blanco",
+        "comun": "comun_maria",
+        "laudes": {
+          "antifona_invitatorio": "Aclamemos al Señor en esta fiesta de María Virgen.",
+          "himno": {
+            "titulo": "Cabeza y Cuerpo",
+            "texto": "Cabeza y Cuerpo, Cristo forma un todo,\nHijo de Dios e Hijo de María:\nun Hijo en quien se juntan muchos hijos:\nen su Madre ya la Iglesia se perfila.\n\nUna y otra son madres y son vírgenes,\nuna y otra conciben del Espíritu,\nuna y otra sin mancha ni pecado,\nal Padre celestial engendran hijos.\n\nMaría le da al Cuerpo la Cabeza,\nla Iglesia a la Cabeza le da el Cuerpo:\nuna y otra son madre del Señor,\nninguna sin la otra por entero.\n\nGloria a la Trinidad inaccesible\nque ha querido morar entre nosotros,\nen María, en la Iglesia, en nuestra alma,\npara llenarnos de su eterno gozo. Amén."
+          },
+          "lectura_breve": {
+            "ref": "Is 61, 10",
+            "texto": "Desbordo de gozo en el Señor, y me alegro con mi Dios: porque me ha vestido un traje de gala y me ha envuelto en un manto de triunfo, como a una novia que se adorna con sus joyas."
+          },
+          "responsorio_breve": {
+            "V": "El Señor la eligió y la predestinó.",
+            "R": "El Señor la eligió y la predestinó.",
+            "V2": "La hizo morar en su templo santo.",
+            "R2": "Y la predestinó.",
+            "Gloria": "Gloria al Padre, y al Hijo, y al Espíritu Santo.",
+            "R3": "El Señor la eligió y la predestinó."
+          },
+          "antifona_benedictus": "Te glorificamos, santa Madre de Dios, porque al concebir en tu seno virginal al Hijo de Dios y al darlo a luz al mundo, preparaste el nacimiento de la Iglesia, que hoy por ello te aclama como madre.",
+          "preces": {
+            "introduccion": "Elevemos nuestras súplicas al Salvador, que quiso nacer de María Virgen, y digámosle:",
+            "respuesta_comun": "Que tu santa Madre, Señor, interceda por nosotros.",
+            "peticiones": [
+              "Salvador del mundo, tú que con la eficacia de tu redención preservaste a tu Madre de toda mancha de pecado,\nlíbranos también a nosotros de toda culpa.",
+              "Redentor nuestro, tú que hiciste de la inmaculada Virgen María tabernáculo purísimo de tu presencia y sagrario del Espíritu Santo,\nhaz también de nosotros templos de tu Espíritu.",
+              "Palabra eterna del Padre, que enseñaste a María a escoger la parte mejor,\nayúdanos a imitarla y a buscar el alimento que perdura hasta la vida eterna.",
+              "Rey de reyes, que elevaste contigo a tu Madre en cuerpo y alma al cielo,\nhaz que aspiremos siempre a los bienes celestiales.",
+              "Señor del cielo y de la tierra, que has colocado a tu derecha a María reina,\ndanos el gozo de tener parte en su gloria."
+            ]
+          },
+          "oracion_final": "Señor, Padre de misericordia, cuyo Hijo, clavado en la cruz, proclamó como Madre nuestra a su Madre, santa María virgen, concédenos por su mediación amorosa, que tu Iglesia, cada día más fecunda, se llene de gozo por la santidad de sus hijos, y atraiga a su seno a todos los pueblos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios, por los siglos de los siglos. Amén."
+        },
+        "oficio_lectura": {
+          "segunda_lectura": {
+            "fuente": "De las obras oratorias de Bossuet, obispo de Meaux, sobre la bienaventurada Virgen María",
+            "referencia": "Sermón sobre la fiesta del escapulario: Oeuvres oratoires, edición Lebarq, Desclée de Brouwer 1926, I, 388-389",
+            "titulo": "MARÍA, MADRE DE LA IGLESIA",
+            "texto": "La santa Virgen María es la verdadera Eva, la verdadera madre de todos los vivientes. Vivid, vivid, y María será vuestra madre. Pero vivid de Jesucristo y por Jesucristo, porque incluso María tiene vida únicamente de Jesucristo y por Jesucristo.\n\nLa maternidad de la santa Virgen es una realidad innegable. Por otra parte, que María sea madre de los cristianos es algo que no puede ser más oportuno; éste fue también el designio de Dios, revelado ya desde el paraíso. Pero para que esta realidad penetre más profundamente en vuestros corazones, debéis admirar el modo como este designio de Dios llegó a cumplimiento en el Evangelio de nuestro Salvador, contemplando cómo Jesús quiso asociar a sí a la santa Virgen al engendrarnos por medio del alumbramiento de su sangre, que siempre tan fértil, produjo frutos agradables al Padre.\n\nEn aquella ocasión, san Juan representaba la universalidad de los fieles. Entended mi raciocinio: todos los demás discípulos del Salvador abandonaron a Jesús. Dios permitió que esto sucediera así para que comprendiéramos que son pocos los que siguen a Jesús hasta su cruz.\nAsí, pues, habiéndose dispersado todos los demás discípulos, la providencia quiso que, junto al Dios que moría, no permaneciera sino Juan, el discípulo amado. Él fue el único, él, el verdadero fiel; porque únicamente es verdadero fiel de Jesús el que le sigue hasta la cruz. Y fue así como este único fiel representó a todos los fieles. Por consiguiente, cuando Jesucristo, hablando a su Madre, le dice que Juan es su hijo, no penséis que considera a san Juan como un hombre particular: en la persona de Juan entrega a María todos sus discípulos, todos sus fieles, todos los herederos de la nueva alianza, todos los hijos de su cruz.\n\nPor esto, precisamente, llama a María «Mujer»; con esta expresión quería significar «Mujer por excelencia, Mujer elegida singularmente para ser la madre del pueblo elegido». «Oh Mujer, oh nueva Eva —le dice—, ahí tienes a tu hijo; por tanto, Juan y todos los fieles a quienes él representa son tus hijos. Juan es mi discípulo, mi discípulo amado; recibe, pues, en su persona a todos los cristianos, porque aquí Juan los representa a todos, ya que todos ellos son, como lo es Juan, mis discípulos, mis discípulos amados.» Esto es lo que el Salvador quería significar a su santa Madre.\n\nY lo que más importante se me antoja en este hecho es que Jesús dirija estas palabras a María desde la cruz. Porque en la cruz es donde el Hijo de Dios nos dio la vida y nos engendró a la gracia por la fuerza de su sangre derramada por nosotros. Y es precisamente desde la cruz desde donde significa a la purísima virgen María que ella es madre de Juan y madre de todos los fieles. Mujer, ahí tienes a tu hijo, le dice. En estas palabras contemplo al nuevo Adán que, al engendrarnos por su muerte, asocia a la nueva Eva, su santa Madre, en la generación, casta y misteriosa, de los hijos del nuevo Testamento.",
+            "responsorio": {
+              "R": "«Mujer, ahí tienes a tu hijo», dijo Jesús a su madre; luego dijo al discípulo: * «Ahí tienes a tu madre.»",
+              "V": "Se llamará nueva Eva, por ser la madre de todos los vivientes.",
+              "R2": "Ahí tienes a tu madre."
+            }
+          }
+        }
+      }
+    },
+    "sagrado_corazon": {
+      "calculo": "pentecostes + 19 dias (viernes 2 sem post-pent)",
+      "info": {
+        "tipo": "solemnidad",
+        "nombre": "El Sagrado Corazón de Jesús",
+        "color": "blanco",
+        "comun": null,
+        "oficio_lectura": {
+          "primera_lectura": {
+            "ref": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          },
+          "segunda_lectura": {
+            "fuente": "",
+            "referencia": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          }
+        },
+        "laudes": {
+          "antifona_invitatorio": "",
+          "antifona_benedictus": "",
+          "oracion_final": ""
+        },
+        "visperas": {
+          "antifona_magnificat": "",
+          "oracion_final": ""
+        },
+        "misa": {
+          "antifona_entrada": "",
+          "colecta": "",
+          "primera_lectura": {
+            "ref": "",
+            "texto": ""
+          },
+          "salmo_responsorial": {
+            "ref": "",
+            "respuesta": "",
+            "estrofas": ""
+          },
+          "aleluya": "",
+          "evangelio": {
+            "ref": "",
+            "texto": ""
+          },
+          "oracion_ofrendas": "",
+          "antifona_comunion": "",
+          "oracion_postcomunion": ""
+        }
+      }
+    },
+    "inmaculado_corazon_maria": {
+      "calculo": "pentecostes + 20 dias (sabado siguiente al Sagrado Corazon)",
+      "info": {
+        "tipo": "memoria_obligatoria",
+        "nombre": "El Inmaculado Corazón de la Bienaventurada Virgen María",
+        "color": "blanco",
+        "comun": "comun_maria",
+        "oficio_lectura": {
+          "primera_lectura": {
+            "ref": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          },
+          "segunda_lectura": {
+            "fuente": "",
+            "referencia": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          }
+        },
+        "laudes": {
+          "antifona_invitatorio": "",
+          "antifona_benedictus": "",
+          "oracion_final": ""
+        },
+        "visperas": {
+          "antifona_magnificat": "",
+          "oracion_final": ""
+        },
+        "misa": {
+          "antifona_entrada": "",
+          "colecta": "",
+          "primera_lectura": {
+            "ref": "",
+            "texto": ""
+          },
+          "salmo_responsorial": {
+            "ref": "",
+            "respuesta": "",
+            "estrofas": ""
+          },
+          "aleluya": "",
+          "evangelio": {
+            "ref": "",
+            "texto": ""
+          },
+          "oracion_ofrendas": "",
+          "antifona_comunion": "",
+          "oracion_postcomunion": ""
+        }
+      }
+    },
+    "santisima_trinidad": {
+      "calculo": "pentecostes + 7 dias (domingo siguiente)",
+      "info": {
+        "tipo": "solemnidad",
+        "nombre": "La Santísima Trinidad",
+        "color": "blanco",
+        "comun": null,
+        "oficio_lectura": {
+          "primera_lectura": {
+            "ref": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          },
+          "segunda_lectura": {
+            "fuente": "",
+            "referencia": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          }
+        },
+        "laudes": {
+          "antifona_invitatorio": "",
+          "antifona_benedictus": "",
+          "oracion_final": ""
+        },
+        "visperas": {
+          "antifona_magnificat": "",
+          "oracion_final": ""
+        },
+        "misa": {
+          "antifona_entrada": "",
+          "colecta": "",
+          "primera_lectura": {
+            "ref": "",
+            "texto": ""
+          },
+          "salmo_responsorial": {
+            "ref": "",
+            "respuesta": "",
+            "estrofas": ""
+          },
+          "aleluya": "",
+          "evangelio": {
+            "ref": "",
+            "texto": ""
+          },
+          "oracion_ofrendas": "",
+          "antifona_comunion": "",
+          "oracion_postcomunion": ""
+        }
+      }
+    },
+    "corpus_christi": {
+      "calculo": "pentecostes + 14 dias (segundo domingo post-pent) — para España/LATAM",
+      "info": {
+        "tipo": "solemnidad",
+        "nombre": "El Santísimo Cuerpo y Sangre de Cristo (Corpus Christi)",
+        "color": "blanco",
+        "comun": null,
+        "oficio_lectura": {
+          "primera_lectura": {
+            "ref": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          },
+          "segunda_lectura": {
+            "fuente": "",
+            "referencia": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          }
+        },
+        "laudes": {
+          "antifona_invitatorio": "",
+          "antifona_benedictus": "",
+          "oracion_final": ""
+        },
+        "visperas": {
+          "antifona_magnificat": "",
+          "oracion_final": ""
+        },
+        "misa": {
+          "antifona_entrada": "",
+          "colecta": "",
+          "primera_lectura": {
+            "ref": "",
+            "texto": ""
+          },
+          "salmo_responsorial": {
+            "ref": "",
+            "respuesta": "",
+            "estrofas": ""
+          },
+          "aleluya": "",
+          "evangelio": {
+            "ref": "",
+            "texto": ""
+          },
+          "oracion_ofrendas": "",
+          "antifona_comunion": "",
+          "oracion_postcomunion": ""
+        }
+      }
+    },
+    "cristo_rey": {
+      "calculo": "ultimo domingo del Tiempo Ordinario (semana 34)",
+      "info": {
+        "tipo": "solemnidad",
+        "nombre": "Nuestro Señor Jesucristo, Rey del Universo",
+        "color": "blanco",
+        "comun": null,
+        "oficio_lectura": {
+          "primera_lectura": {
+            "ref": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          },
+          "segunda_lectura": {
+            "fuente": "",
+            "referencia": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          }
+        },
+        "laudes": {
+          "antifona_invitatorio": "",
+          "antifona_benedictus": "",
+          "oracion_final": ""
+        },
+        "visperas": {
+          "antifona_magnificat": "",
+          "oracion_final": ""
+        },
+        "misa": {
+          "antifona_entrada": "",
+          "colecta": "",
+          "primera_lectura": {
+            "ref": "",
+            "texto": ""
+          },
+          "salmo_responsorial": {
+            "ref": "",
+            "respuesta": "",
+            "estrofas": ""
+          },
+          "aleluya": "",
+          "evangelio": {
+            "ref": "",
+            "texto": ""
+          },
+          "oracion_ofrendas": "",
+          "antifona_comunion": "",
+          "oracion_postcomunion": ""
+        }
+      }
+    },
+    "sagrada_familia": {
+      "calculo": "domingo en la octava de Navidad (entre 26 y 31 dic, o 30 dic si Navidad cae en domingo)",
+      "info": {
+        "tipo": "fiesta",
+        "nombre": "La Sagrada Familia: Jesús, María y José",
+        "color": "blanco",
+        "comun": null,
+        "oficio_lectura": {
+          "primera_lectura": {
+            "ref": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          },
+          "segunda_lectura": {
+            "fuente": "",
+            "referencia": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          }
+        },
+        "laudes": {
+          "antifona_invitatorio": "",
+          "antifona_benedictus": "",
+          "oracion_final": ""
+        },
+        "visperas": {
+          "antifona_magnificat": "",
+          "oracion_final": ""
+        },
+        "misa": {
+          "antifona_entrada": "",
+          "colecta": "",
+          "primera_lectura": {
+            "ref": "",
+            "texto": ""
+          },
+          "salmo_responsorial": {
+            "ref": "",
+            "respuesta": "",
+            "estrofas": ""
+          },
+          "aleluya": "",
+          "evangelio": {
+            "ref": "",
+            "texto": ""
+          },
+          "oracion_ofrendas": "",
+          "antifona_comunion": "",
+          "oracion_postcomunion": ""
+        }
+      }
+    },
+    "bautismo_senor": {
+      "calculo": "domingo despues de la Epifania (o lunes si Epifania cae en domingo)",
+      "info": {
+        "tipo": "fiesta",
+        "nombre": "El Bautismo del Señor",
+        "color": "blanco",
+        "comun": null,
+        "oficio_lectura": {
+          "primera_lectura": {
+            "ref": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          },
+          "segunda_lectura": {
+            "fuente": "",
+            "referencia": "",
+            "titulo": "",
+            "texto": "",
+            "responsorio": {
+              "R": "",
+              "V": "",
+              "R2": ""
+            }
+          }
+        },
+        "laudes": {
+          "antifona_invitatorio": "",
+          "antifona_benedictus": "",
+          "oracion_final": ""
+        },
+        "visperas": {
+          "antifona_magnificat": "",
+          "oracion_final": ""
+        },
+        "misa": {
+          "antifona_entrada": "",
+          "colecta": "",
+          "primera_lectura": {
+            "ref": "",
+            "texto": ""
+          },
+          "salmo_responsorial": {
+            "ref": "",
+            "respuesta": "",
+            "estrofas": ""
+          },
+          "aleluya": "",
+          "evangelio": {
+            "ref": "",
+            "texto": ""
+          },
+          "oracion_ofrendas": "",
+          "antifona_comunion": "",
+          "oracion_postcomunion": ""
+        }
+      }
+    }
+  }
+}
