@@ -417,6 +417,8 @@ footer{border-top:1px solid var(--bdr);background:var(--bg2);text-align:center;p
 // ── LITURGIA DATA — carga dinámica por mes ────────────────────────
 // Los JSON viven en /liturgia/YYYY-MM.json
 // El sistema carga el mes actual y el siguiente para cubrir cambios de mes
+var SALMO_94_TEXTO_DEFAULT = "Venid, aclamemos al Señor,\ndemos vítores a la Roca que nos salva;\nentremos a su presencia dándole gracias,\naclamándolo con cantos.\n\nPorque el Señor es un Dios grande,\nsoberano de todos los dioses:\ntiene en su mano las simas de la tierra,\nson suyas las cumbres de los montes;\nsuyo es el mar, porque él lo hizo,\nla tierra firme que modelaron sus manos.\n\nVenid, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía.\n\nOjalá escuchéis hoy su voz:\n«No endurezcáis el corazón como en Meribá,\ncomo el día de Masá en el desierto;\ncuando vuestros padres me pusieron a prueba\ny dudaron de mí, aunque habían visto mis obras.»\n\nDurante cuarenta años\naquella generación me asqueó, y dije:\n«Es un pueblo de corazón extraviado,\nque no reconoce mi camino;\npor eso he jurado en mi cólera\nque no entrarán en mi descanso.»";
+
 var LITURGIA = { dias: {}, calendario: {}, oficioOrdinario: {}, santoral: {}, santoralMovil: {}, salterio: {} };
 var _liturgiaLoaded = false;
 
@@ -692,7 +694,6 @@ function buildLaudes(laud, shortDate, misa, today){
   if(antifInvitatorio){h+=ant(antifInvitatorio);}
   else{h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic;margin-bottom:10px">Antífona del invitatorio — pendiente.</div>';}
   // Texto del Salmo 94 (estándar — siempre el mismo)
-  if(!SALMO_94_TEXTO_DEFAULT) window.SALMO_94_TEXTO_DEFAULT = "Venid, aclamemos al Señor,\ndemos vítores a la Roca que nos salva;\nentremos a su presencia dándole gracias,\naclamándolo con cantos.\n\nPorque el Señor es un Dios grande,\nsoberano de todos los dioses:\ntiene en su mano las simas de la tierra,\nson suyas las cumbres de los montes;\nsuyo es el mar, porque él lo hizo,\nla tierra firme que modelaron sus manos.\n\nVenid, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía.\n\nOjalá escuchéis hoy su voz:\n«No endurezcáis el corazón como en Meribá,\ncomo el día de Masá en el desierto;\ncuando vuestros padres me pusieron a prueba\ny dudaron de mí, aunque habían visto mis obras.»\n\nDurante cuarenta años\naquella generación me asqueó, y dije:\n«Es un pueblo de corazón extraviado,\nque no reconoce mi camino;\npor eso he jurado en mi cólera\nque no entrarán en mi descanso.»";
   var textoSalmo94 = (inv.salmo_94 && inv.salmo_94.texto) || SALMO_94_TEXTO_DEFAULT;
   if(textoSalmo94){
     var ivlines=textoSalmo94.split('\n');
