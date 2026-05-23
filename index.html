@@ -651,17 +651,51 @@ function buildLaudes(laud, shortDate, misa, today){
   var celebracion = infoLit && infoLit.celebracion;
   var tiempoLit = (infoLit && infoLit.tiempo) || '';
 
+  // ── Resolver contenido del santoral si hay celebración ──
+  // El santoral_movil o santoral fijo tiene los textos PROPIOS de la celebración
+  var celebContenido = null;
+  if(celebracion){
+    if(celebracion.origen === 'santoral_movil' && LITURGIA.santoralMovil){
+      var celMov = LITURGIA.santoralMovil[celebracion.clave];
+      if(celMov && celMov.info) celebContenido = celMov.info;
+    } else if(celebracion.origen === 'santoral_fijo' && LITURGIA.santoral){
+      celebContenido = LITURGIA.santoral[celebracion.clave] || null;
+    } else if(LITURGIA.santoralMovil){
+      // Búsqueda por nombre cuando no viene el origen explícito (compat)
+      for(var k in LITURGIA.santoralMovil){
+        var c = LITURGIA.santoralMovil[k];
+        if(c && c.info && c.info.nombre === celebracion.nombre){
+          celebContenido = c.info;
+          break;
+        }
+      }
+    }
+  }
+  var celebLaudes = (celebContenido && celebContenido.laudes) || {};
+  var celebOficio = (celebContenido && celebContenido.oficio_lectura) || {};
+
+  // Helper: priorizar santoral → JSON del día → fallback
+  function pickPropio(campoSantoral, campoDelDia, fallback){
+    if(campoSantoral !== undefined && campoSantoral !== null && campoSantoral !== '') return campoSantoral;
+    if(campoDelDia !== undefined && campoDelDia !== null && campoDelDia !== '') return campoDelDia;
+    return fallback;
+  }
+
   // 1. Saludo inicial
   var vi=laud.verso_inicial||{};
   h+='<div class="pblock">'+label('Saludo Inicial')+versiculo(vi.V||'Señor, abre mis labios.', vi.R||'Y mi boca proclamará tu alabanza.')+'</div>';
 
-  // 2. Invitatorio: antífona + Salmo 94
+  // 2. Invitatorio: antífona (del santoral si hay) + Salmo 94 (estándar)
   var inv=laud.invitatorio||{};
+  var antifInvitatorio = pickPropio(celebLaudes.antifona_invitatorio, inv.antifona, null);
   h+='<div class="pblock">'+label('Invitatorio')+'<div class="stitle">Salmo 94 (95) — Invitación a la alabanza divina</div>';
-  if(inv.antifona){h+=ant(inv.antifona);}
-  else{h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic;margin-bottom:10px">Antífona del invitatorio — ver Breviario Romano.</div>';}
-  if(inv.salmo_94 && inv.salmo_94.texto){
-    var ivlines=inv.salmo_94.texto.split('\n');
+  if(antifInvitatorio){h+=ant(antifInvitatorio);}
+  else{h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic;margin-bottom:10px">Antífona del invitatorio — pendiente.</div>';}
+  // Texto del Salmo 94 (estándar — siempre el mismo)
+  if(!SALMO_94_TEXTO_DEFAULT) window.SALMO_94_TEXTO_DEFAULT = "Venid, aclamemos al Señor,\ndemos vítores a la Roca que nos salva;\nentremos a su presencia dándole gracias,\naclamándolo con cantos.\n\nPorque el Señor es un Dios grande,\nsoberano de todos los dioses:\ntiene en su mano las simas de la tierra,\nson suyas las cumbres de los montes;\nsuyo es el mar, porque él lo hizo,\nla tierra firme que modelaron sus manos.\n\nVenid, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía.\n\nOjalá escuchéis hoy su voz:\n«No endurezcáis el corazón como en Meribá,\ncomo el día de Masá en el desierto;\ncuando vuestros padres me pusieron a prueba\ny dudaron de mí, aunque habían visto mis obras.»\n\nDurante cuarenta años\naquella generación me asqueó, y dije:\n«Es un pueblo de corazón extraviado,\nque no reconoce mi camino;\npor eso he jurado en mi cólera\nque no entrarán en mi descanso.»";
+  var textoSalmo94 = (inv.salmo_94 && inv.salmo_94.texto) || SALMO_94_TEXTO_DEFAULT;
+  if(textoSalmo94){
+    var ivlines=textoSalmo94.split('\n');
     var ivhtml='<div class="psalm">';
     var ivstrophe='<div class="strophe">';
     ivlines.forEach(function(line){
@@ -671,34 +705,32 @@ function buildLaudes(laud, shortDate, misa, today){
     ivhtml+=ivstrophe+'</div></div>';
     h+=ivhtml;
     h+='<div class="gloria">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</div>';
-    if(inv.antifona){h+=ant(inv.antifona);}
-  } else {
-    h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Texto del Salmo 94 — contenido pendiente.</div>';
+    if(antifInvitatorio){h+=ant(antifInvitatorio);}
   }
   h+='</div>';
 
-  // 3. Himno
-  var himno=laud.himno||{};
+  // 3. Himno (preferir santoral)
+  var himnoSantoral = celebLaudes.himno;
+  var himnoDia = laud.himno || {};
+  var himno = (himnoSantoral && (himnoSantoral.texto || himnoSantoral.titulo)) ? himnoSantoral : himnoDia;
   h+='<div class="pblock">'+label('Himno')+'<div class="stitle">'+(himno.titulo||himno.indicacion||'Himno del tiempo')+'</div>';
   if(himno.texto){h+='<div class="psalm"><div class="strophe">'+himno.texto.split('\n').map(function(l){return l.trim()?'<p>'+l+'</p>':''}).join('')+'</div></div>';}
   else{h+='<div style="font-size:0.82rem;color:var(--text3);font-style:italic">'+(himno.nota||'Ver Himnario del Breviario Romano.')+'</div>';}
   h+='</div>';
 
-  // 4. Salmodia — resuelve desde salterio.json según día/salterio del calendario
+  // 4. Salmodia — del salterio.json según día/salterio del calendario
+  // Regla CN: la salmodia se toma siempre de la feria/salterio (excepto solemnidades/fiestas con propio)
   var salmodiaContenido = null;
-  
-  // Prioridad 1: si la celebración (memoria/fiesta) tiene salmodia propia
-  if(celebracion && laud.salmodia && Object.keys(laud.salmodia).length > 0){
-    salmodiaContenido = laud.salmodia;
+  var esSolemnidadOFiesta = celebracion && (celebracion.tipo === 'solemnidad' || celebracion.tipo === 'fiesta');
+
+  // Solo en solemnidades/fiestas el santoral puede tener salmodia propia
+  if(esSolemnidadOFiesta && celebLaudes.salmodia){
+    salmodiaContenido = celebLaudes.salmodia;
   }
-  // Prioridad 2: si hay salmodia en el JSON del día (compatibilidad con datos existentes)
-  else if(laud.salmodia && Object.keys(laud.salmodia).length > 0){
-    salmodiaContenido = laud.salmodia;
-  }
-  // Prioridad 3: tomar del salterio según día e info litúrgica
+  // Para todo lo demás, salmodia del salterio
   if(!salmodiaContenido && infoLit && LITURGIA.salterio){
-    var salterioNum = infoLit.salterio; // "I" | "II" | "III" | "IV"
-    var diaSem = infoLit.dia; // "lunes" | "martes" | ...
+    var salterioNum = infoLit.salterio;
+    var diaSem = infoLit.dia;
     if(salterioNum && diaSem){
       var salterioObj = LITURGIA.salterio['salterio_'+salterioNum];
       if(salterioObj && salterioObj.laudes && salterioObj.laudes[diaSem]){
@@ -706,12 +738,35 @@ function buildLaudes(laud, shortDate, misa, today){
       }
     }
   }
-  
+  // Fallback: salmodia del JSON del día (compatibilidad)
+  if(!salmodiaContenido && laud.salmodia && Object.keys(laud.salmodia).length > 0){
+    salmodiaContenido = laud.salmodia;
+  }
+
   h+='<div class="pblock">'+label('Salmodia'+(infoLit && infoLit.salterio ? ' — Salterio '+infoLit.salterio : ''))+salmodia_block(salmodiaContenido, tiempoLit)+'</div>';
 
-  // 5. Lectura breve
-  var lb=laud.lectura_breve||{};
+  // 5. Lectura breve (preferir santoral)
+  var lbSantoral = celebLaudes.lectura_breve;
+  var lbDia = laud.lectura_breve || {};
+  var lb = (lbSantoral && (lbSantoral.ref || lbSantoral.texto)) ? lbSantoral : lbDia;
   h+='<div class="pblock">'+label('Lectura Breve')+reading(lb.ref||lb.referencia, lb.texto)+'</div>';
+
+  // 5b. Responsorio breve (preferir santoral) — opcional según tradición
+  var rbSantoral = celebLaudes.responsorio_breve;
+  var rb = (rbSantoral && rbSantoral.V) ? rbSantoral : (laud.responsorio_breve || {});
+  if(rb && rb.V){
+    var rhtml = '<div class="vcl">';
+    rhtml += '<span class="vm">V.</span><span class="vt">'+rb.V+'</span>';
+    if(rb.R) rhtml += '<span class="vm">R.</span><span class="vt">'+rb.R+'</span>';
+    if(rb.V2) rhtml += '<span class="vm">V.</span><span class="vt">'+rb.V2+'</span>';
+    if(rb.R2) rhtml += '<span class="vm">R.</span><span class="vt">'+rb.R2+'</span>';
+    if(rb.Gloria) rhtml += '<span class="vm">V.</span><span class="vt">'+rb.Gloria+'</span>';
+    else if(rb.V) rhtml += '<span class="vm">V.</span><span class="vt">Gloria al Padre, y al Hijo, y al Espíritu Santo.</span>';
+    if(rb.R3) rhtml += '<span class="vm">R.</span><span class="vt">'+rb.R3+'</span>';
+    else if(rb.V) rhtml += '<span class="vm">R.</span><span class="vt">'+rb.V+'</span>';
+    rhtml += '</div>';
+    h+='<div class="pblock">'+label('Responsorio Breve')+rhtml+'</div>';
+  }
 
   // Ad
   h+=adBlock('2222222222');
@@ -1071,29 +1126,81 @@ async function render(){
   var info=getLiturgical(today);
   var civil=DIAS[today.getDay()]+', '+today.getDate()+' de '+MESES[today.getMonth()]+' de '+today.getFullYear();
   var shortDate=DIAS[today.getDay()]+', '+today.getDate()+' de '+MESES[today.getMonth()];
-  var litDesc=DIAS[today.getDay()];
-  if(info.week) litDesc+=' de la semana '+info.week+' del '+info.name;
-  else litDesc+=' del '+info.name;
+
+  // litDesc: usar el calendario nuevo como fuente principal
+  var infoLitCal = (LITURGIA.calendario && todayKey) ? LITURGIA.calendario[todayKey] : null;
+  var litDesc = DIAS[today.getDay()];
+  if(infoLitCal){
+    var nomTiempoDesc = {
+      'ordinario':'del Tiempo Ordinario',
+      'adviento':'de Adviento',
+      'adviento_octava':'de Adviento',
+      'navidad':'del Tiempo de Navidad',
+      'cuaresma':'de Cuaresma',
+      'semana_santa':'de Semana Santa',
+      'triduo':'del Triduo Pascual',
+      'pascua':'del Tiempo Pascual'
+    }[infoLitCal.tiempo] || ('del '+info.name);
+    if(infoLitCal.semana){
+      litDesc += ' de la semana '+infoLitCal.semana+' '+nomTiempoDesc;
+    } else {
+      litDesc += ' '+nomTiempoDesc;
+    }
+  } else if(info.week){
+    litDesc += ' de la semana '+info.week+' del '+info.name;
+  } else {
+    litDesc += ' del '+info.name;
+  }
 
   document.getElementById('dateCivil').textContent=civil;
   document.getElementById('dateLit').textContent=litDesc;
 
-  // Season widget
-  var ps=info.week?((info.week-1)%4)+1:null;
+  // Season widget — usa el calendario litúrgico nuevo como fuente principal
+  var infoLitCal = (LITURGIA.calendario && today) ? LITURGIA.calendario[todayKey] : null;
+  var celebracionCal = infoLitCal && infoLitCal.celebracion;
   var colorLabel={adviento:'Morado',navidad:'Blanco',cuaresma:'Morado',triduo:'Rojo / Negro',pascual:'Blanco',ordinario:'Verde'};
-  // Season chip uses the SAME palette as the accent colors
-  var todayDayData=LITURGIA.dias&&LITURGIA.dias[todayKey];
-  var todayColorKey=(todayDayData&&todayDayData.color_liturgico)||SEASON_DEFAULT_COLOR[info.season]||'verde';
-  if(todayDayData&&isMarian(todayDayData.nombre_celebracion||'')) todayColorKey='azul';
+
+  // Determinar color y semana — preferir calendario
+  var semanaActual = (infoLitCal && infoLitCal.semana) || info.week || null;
+  var salterioActual = (infoLitCal && infoLitCal.salterio) || (semanaActual ? ['I','II','III','IV'][(semanaActual-1)%4] : null);
+
+  // Color: 1) celebración, 2) calendario, 3) dayData, 4) estación
+  var todayDayData = LITURGIA.dias && LITURGIA.dias[todayKey];
+  var todayColorKey;
+  if(celebracionCal && celebracionCal.color){
+    todayColorKey = celebracionCal.color.toLowerCase();
+  } else if(infoLitCal && infoLitCal.color){
+    todayColorKey = infoLitCal.color.toLowerCase();
+  } else if(todayDayData && todayDayData.color_liturgico){
+    todayColorKey = todayDayData.color_liturgico.toLowerCase();
+  } else {
+    todayColorKey = SEASON_DEFAULT_COLOR[info.season] || 'verde';
+  }
+  // Detección Mariana — usar nombre de celebración del calendario primero
+  var nombreParaMariano = (celebracionCal && celebracionCal.nombre) || (todayDayData && todayDayData.nombre_celebracion) || '';
+  if(isMarian(nombreParaMariano)) todayColorKey='azul';
   if(!LITURGICAL_PALETTES[todayColorKey]) todayColorKey=SEASON_DEFAULT_COLOR[info.season]||'verde';
+
   var todayColorLabel=(LITURGICAL_PALETTES[todayColorKey]&&LITURGICAL_PALETTES[todayColorKey].label)||colorLabel[info.season];
   var curTheme=document.documentElement.getAttribute('data-theme')||'dark';
   var chipPalette=LITURGICAL_PALETTES[todayColorKey]||LITURGICAL_PALETTES['verde'];
   var chipColor=curTheme==='light'?chipPalette.light.red:chipPalette.dark.red;
-  var sw='<div class="season-chip" style="background:'+chipColor+'"><span class="dot"></span>'+info.name+'</div>';
+
+  // Nombre del tiempo — preferir info del calendario
+  var nombreTiempo = info.name;
+  if(infoLitCal && infoLitCal.tiempo){
+    var nomMap = {
+      'ordinario':'Tiempo Ordinario','adviento':'Adviento','adviento_octava':'Adviento',
+      'navidad':'Navidad','cuaresma':'Cuaresma','semana_santa':'Semana Santa',
+      'triduo':'Triduo Pascual','pascua':'Tiempo Pascual'
+    };
+    nombreTiempo = nomMap[infoLitCal.tiempo] || info.name;
+  }
+
+  var sw='<div class="season-chip" style="background:'+chipColor+'"><span class="dot"></span>'+nombreTiempo+'</div>';
   sw+='<div class="sdata">Color litúrgico: <strong>'+todayColorLabel+'</strong>';
-  if(info.week)sw+='<br>Semana OT: <strong>'+info.week+'ª</strong>';
-  if(ps)sw+='<br>Salterio: <strong>Semana '+ps+'</strong>';
+  if(semanaActual)sw+='<br>Semana: <strong>'+semanaActual+'ª</strong>';
+  if(salterioActual)sw+='<br>Salterio: <strong>Semana '+salterioActual+'</strong>';
   sw+='</div>';
   document.getElementById('seasonWidget').innerHTML=sw;
 
