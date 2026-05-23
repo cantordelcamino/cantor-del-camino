@@ -817,27 +817,42 @@ function buildLaudes(laud, shortDate, misa, today){
   var clavAnio = anioFerial==='I' ? 'a1' : 'a2';
 
   // ── Aplicar jerarquía: Solemnidad > Fiesta > Memoria > Feria ──
-  // Buscar contenido del Oficio según celebración o tiempo
+  // REGLA para memorias obligatorias (Camino Neocatecumenal):
+  //   1ª Lectura → SIEMPRE de la feria
+  //   2ª Lectura → del propio (santoral) si lo tiene
   var oficioContenido = null;
   var origenContenido = '';
+  var segundaLecturaPropia = null;  // del santoral
 
+  // Extraer la 2ª lectura propia del santoral (si hay celebración)
   if(celebracion){
+    var celOficio = null;
     if(celebracion.origen==='santoral_fijo' && LITURGIA.santoral){
       var celSt = LITURGIA.santoral[celebracion.clave];
-      if(celSt && celSt.oficio_lectura){
-        oficioContenido = celSt.oficio_lectura;
-        origenContenido = 'santoral';
-      }
+      if(celSt && celSt.oficio_lectura) celOficio = celSt.oficio_lectura;
     } else if(celebracion.origen==='santoral_movil' && LITURGIA.santoralMovil){
       var celMov = LITURGIA.santoralMovil[celebracion.clave];
-      if(celMov && celMov.info && celMov.info.oficio_lectura){
-        oficioContenido = celMov.info.oficio_lectura;
-        origenContenido = 'santoral_movil';
+      if(celMov && celMov.info && celMov.info.oficio_lectura) celOficio = celMov.info.oficio_lectura;
+    } else if(LITURGIA.santoralMovil){
+      for(var km in LITURGIA.santoralMovil){
+        var cmv = LITURGIA.santoralMovil[km];
+        if(cmv && cmv.info && cmv.info.nombre === celebracion.nombre){
+          if(cmv.info.oficio_lectura) celOficio = cmv.info.oficio_lectura;
+          break;
+        }
       }
+    }
+    if(celOficio && celOficio.segunda_lectura && celOficio.segunda_lectura.texto){
+      segundaLecturaPropia = celOficio.segunda_lectura;
+    }
+    // Solemnidades y fiestas pueden tener también 1ª lectura propia
+    if(celOficio && (celebracion.tipo==='solemnidad' || celebracion.tipo==='fiesta')){
+      oficioContenido = celOficio;
+      origenContenido = 'santoral';
     }
   }
 
-  // Si no hay contenido del santoral (o no hay celebración), buscar la feria
+  // Para memorias (o si no hay contenido del santoral), buscar la feria
   if(!oficioContenido && infoLit){
     if(infoLit.tiempo==='ordinario' && LITURGIA.oficioOrdinario){
       var sem = LITURGIA.oficioOrdinario[String(infoLit.semana)];
@@ -846,7 +861,17 @@ function buildLaudes(laud, shortDate, misa, today){
         origenContenido = 'ordinario';
       }
     }
-    // En el futuro: pascua, adviento, cuaresma, etc.
+  }
+
+  // Si la feria tiene contenido, inyectar la 2ª lectura propia del santoral
+  if(oficioContenido && segundaLecturaPropia){
+    // Clonar para no mutar el objeto original
+    oficioContenido = Object.assign({}, oficioContenido, {
+      segunda_lectura: segundaLecturaPropia
+    });
+  } else if(!oficioContenido && segundaLecturaPropia){
+    // Solo hay segunda lectura del santoral, sin feria disponible
+    oficioContenido = { segunda_lectura: segundaLecturaPropia };
   }
 
   // Fallback al JSON del mes (compatibilidad con datos previos)
