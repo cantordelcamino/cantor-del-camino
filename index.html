@@ -967,16 +967,28 @@ function buildLaudes(laud, shortDate, misa, today){
   }
   h+='</div>';
 
-  // 7. Evangelio del día (de la misa, texto Biblia de Jerusalén)
-  if(misa && misa.evangelio){
-    var ev=misa.evangelio||{};
+  // 7. Evangelio del día — preferir propio del santoral, fallback a misa del día
+  var evPropio = celebLaudes && celebLaudes.evangelio;
+  var evDia = (misa && misa.evangelio) ? misa.evangelio : null;
+  var ev = evPropio || evDia;
+  if(ev){
     h+='<div class="pblock">'+label('Evangelio del Día');
     h+='<div class="gospel-card">';
+    if(ev.titulo) h+='<div class="gospel-titulo">'+ev.titulo+'</div>';
     h+='<div class="gospel-ref">'+(ev.ref||ev.referencia||'—')+'</div>';
-    if(ev.titulo)h+='<div class="gospel-titulo">'+ev.titulo+'</div>';
-    if(ev.texto){h+='<div style="font-family:var(--fn-lit);font-size:1.02rem;line-height:1.9;margin-top:12px;font-style:italic">'+ev.texto.replace(/\n/g,'<br>')+'</div>';}
-    else{h+=pendiente('Texto del Evangelio — contenido pendiente.');}
-    if(ev.nota)h+='<div class="gospel-nota">'+ev.nota+'</div>';
+    if(ev.texto){
+      var evLines = ev.texto.split('\n');
+      var evHtml = '<div style="font-family:var(--fn-lit);font-size:1.02rem;line-height:1.9;margin-top:12px;font-style:italic">';
+      evLines.forEach(function(l){
+        evHtml += l.trim()==='' ? '<br>' : '<p style="margin:0 0 6px">'+l+'</p>';
+      });
+      evHtml += '</div>';
+      h += evHtml;
+      h += '<div style="font-size:0.82rem;color:var(--text3);margin-top:14px;font-style:italic">Palabra del Señor. — <strong>Gloria a ti, Señor Jesús.</strong></div>';
+    } else {
+      h+=pendiente('Texto del Evangelio — contenido pendiente.');
+    }
+    if(ev.nota) h+='<div class="gospel-nota">'+ev.nota+'</div>';
     h+='</div></div>';
   }
 
