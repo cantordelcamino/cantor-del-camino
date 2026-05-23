@@ -39,7 +39,12 @@
               "Señor del cielo y de la tierra, que has colocado a tu derecha a María reina,\ndanos el gozo de tener parte en su gloria."
             ]
           },
-          "oracion_final": "Señor, Padre de misericordia, cuyo Hijo, clavado en la cruz, proclamó como Madre nuestra a su Madre, santa María virgen, concédenos por su mediación amorosa, que tu Iglesia, cada día más fecunda, se llene de gozo por la santidad de sus hijos, y atraiga a su seno a todos los pueblos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios, por los siglos de los siglos. Amén."
+          "oracion_final": "Señor, Padre de misericordia, cuyo Hijo, clavado en la cruz, proclamó como Madre nuestra a su Madre, santa María virgen, concédenos por su mediación amorosa, que tu Iglesia, cada día más fecunda, se llene de gozo por la santidad de sus hijos, y atraiga a su seno a todos los pueblos. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios, por los siglos de los siglos. Amén.",
+          "evangelio": {
+            "ref": "Jn 19, 25-34",
+            "titulo": "Lectura del santo Evangelio según san Juan",
+            "texto": "En aquel tiempo, junto a la cruz de Jesús estaban su madre, la hermana de su madre, María la de Cleofás, y María Magdalena. Al ver a su madre y junto a ella al discípulo que tanto quería, Jesús dijo a su madre: «Mujer, ahí está tu hijo». Luego dijo al discípulo: «Ahí está tu madre». Y desde entonces el discípulo se la llevó a vivir con él.\n\nDespués de esto, sabiendo Jesús que todo había llegado a su término, para que se cumpliera la Escritura, dijo: «Tengo sed». Había allí un jarro lleno de vinagre. Los soldados sujetaron una esponja empapada en vinagre a una caña de hisopo y se la acercaron a la boca. Jesús probó el vinagre y dijo: «Todo está cumplido», e inclinando la cabeza, entregó el espíritu.\n\nEntonces, los judíos, como era el día de la preparación de la Pascua, para que los cuerpos de los ajusticiados no se quedaran en la cruz el sábado, porque aquel sábado era un día muy solemne, pidieron a Pilato que les quebraran las piernas y los quitaran de la cruz. Fueron los soldados, le quebraron las piernas a uno y luego al otro de los que habían sido crucificados con Jesús. Pero al llegar a él, viendo que ya había muerto, no le quebraron las piernas, sino que uno de los soldados le traspasó el costado con una lanza e inmediatamente salió sangre y agua."
+          }
         },
         "oficio_lectura": {
           "segunda_lectura": {
