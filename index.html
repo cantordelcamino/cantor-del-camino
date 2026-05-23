@@ -928,15 +928,15 @@ function buildLaudes(laud, shortDate, misa, today){
     // ocultar por defecto en orden CN — descomenta si lo necesitas
   }
 
-  // 8. Benedictus — antífona + cántico + antífona
-  var ben=laud.benedictus||{};
+  // 8. Benedictus — antífona (del santoral) + cántico estándar
+  var antifBene = pickPropio(celebLaudes.antifona_benedictus, laud.benedictus && laud.benedictus.antifona, null);
   h+='<div class="pblock">'+label('Benedictus')+'<div class="stitle">Cántico de Zacarías — Lc 1, 68-79</div>';
-  h+=ant(ben.antifona);
+  if(antifBene) h+=ant(antifBene);
   h+='<div class="cbox">';
-  if(ben.texto){
-    var blines=ben.texto.split('\n');
-    var bhtml='<div class="psalm">';
-    var bstrophe='<div class="strophe">';
+  var benTexto = (laud.benedictus && laud.benedictus.texto) || null;
+  if(benTexto){
+    var blines=benTexto.split('\n');
+    var bhtml='<div class="psalm">'; var bstrophe='<div class="strophe">';
     blines.forEach(function(line){
       if(line.trim()===''){bhtml+=bstrophe+'</div>';bstrophe='<div class="strophe">';}
       else{bstrophe+='<p>'+line+'</p>';}
@@ -947,26 +947,47 @@ function buildLaudes(laud, shortDate, misa, today){
     h+='<div class="psalm"><div class="strophe"><p>Bendito el Señor, Dios de Israel,</p><p>porque ha visitado y redimido a su pueblo,</p><p>suscitándonos una fuerza de salvación</p><p>en la casa de David, su siervo.</p></div><div class="strophe"><p>Y tú, niño, te llamarán profeta del Altísimo,</p><p>porque irás delante del Señor a preparar sus caminos,</p><p>anunciando a su pueblo la salvación,</p><p>el perdón de sus pecados.</p></div><div class="strophe"><p>Por la entrañable misericordia de nuestro Dios,</p><p>nos visitará el sol que nace de lo alto,</p><p>para guiar nuestros pasos</p><p>por el camino de la paz.</p></div></div>';
   }
   h+='<div class="gloria">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</div></div>';
-  if(ben.antifona)h+=ant(ben.antifona);
+  if(antifBene) h+=ant(antifBene);
   h+='</div>';
-  // Preces (v2: object with introduccion, estribillo, preces[])
-  var prec=laud.preces||{};
-  if(prec.preces&&prec.preces.length){
-    var ph='<div class="pblock">'+label('Preces');
-    if(prec.introduccion) ph+='<div style="font-style:italic;color:var(--text3);font-size:0.9rem;margin-bottom:14px">'+prec.introduccion+'</div>';
-    if(prec.estribillo) ph+='<div style="text-align:center;font-family:var(--fn-brand);font-size:0.78rem;letter-spacing:0.1em;color:var(--gold);margin-bottom:20px;text-transform:uppercase">'+prec.estribillo+'</div>';
-    prec.preces.forEach(function(pr){
-      ph+='<div class="interc"><p>'+pr.p+'</p><span class="resp">'+pr.r+'</span></div>';
+
+  // 9. Preces — preferir santoral
+  var precSantoral = celebLaudes.preces;
+  var precDia = laud.preces || {};
+
+  // La estructura del santoral es: { introduccion, respuesta_comun, peticiones: [] }
+  // La estructura del JSON del día es: { introduccion, estribillo, preces: [{p, r}] }
+  var precHtml = '';
+  if(precSantoral && precSantoral.peticiones && precSantoral.peticiones.length){
+    precHtml = '<div class="pblock">'+label('Preces');
+    if(precSantoral.introduccion) precHtml+='<div style="font-style:italic;color:var(--text3);font-size:0.9rem;margin-bottom:14px">'+precSantoral.introduccion+'</div>';
+    if(precSantoral.respuesta_comun) precHtml+='<div style="text-align:center;font-family:var(--fn-brand);font-size:0.78rem;letter-spacing:0.1em;color:var(--gold);margin-bottom:20px;text-transform:uppercase">'+precSantoral.respuesta_comun+'</div>';
+    precSantoral.peticiones.forEach(function(pet){
+      var partes = pet.split('\n');
+      var p1 = partes[0] || pet;
+      var p2 = partes[1] || '';
+      precHtml+='<div class="interc"><p>'+p1+(p2?'<br><em>'+p2+'</em>':'')+'</p><span class="resp">'+precSantoral.respuesta_comun+'</span></div>';
     });
-    ph+='</div>';
-    h+=ph;
+    precHtml+='</div>';
+    h+=precHtml;
+  } else if(precDia.preces && precDia.preces.length){
+    precHtml='<div class="pblock">'+label('Preces');
+    if(precDia.introduccion) precHtml+='<div style="font-style:italic;color:var(--text3);font-size:0.9rem;margin-bottom:14px">'+precDia.introduccion+'</div>';
+    if(precDia.estribillo) precHtml+='<div style="text-align:center;font-family:var(--fn-brand);font-size:0.78rem;letter-spacing:0.1em;color:var(--gold);margin-bottom:20px;text-transform:uppercase">'+precDia.estribillo+'</div>';
+    precDia.preces.forEach(function(pr){
+      precHtml+='<div class="interc"><p>'+pr.p+'</p><span class="resp">'+pr.r+'</span></div>';
+    });
+    precHtml+='</div>';
+    h+=precHtml;
   } else {
-    h+='<div class="pblock">'+label('Preces')+'<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Las preces de Laudes son propias del tiempo. Ver Breviario Romano.</div></div>';
+    h+='<div class="pblock">'+label('Preces')+'<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Contenido pendiente.</div></div>';
   }
-  // Padre Nuestro
+
+  // 10. Padre Nuestro
   h+='<div class="pblock">'+label('Padre Nuestro')+pater()+'</div>';
-  // Oración
-  h+='<div class="pblock">'+label('Oración')+oracion(laud.oracion)+'</div>';
+
+  // 11. Oración Final — preferir santoral
+  var oracionFinal = pickPropio(celebLaudes.oracion_final, laud.oracion, null);
+  h+='<div class="pblock">'+label('Oración')+oracion(oracionFinal)+'</div>';
   h+='<div class="orn">✦ &nbsp; ✦ &nbsp; ✦</div>';
   h+='</article>';
   return h;
