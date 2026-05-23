@@ -1208,22 +1208,49 @@ async function render(){
   var dayData=LITURGIA.dias&&LITURGIA.dias[todayKey];
 
   if(!dayData){
-    // No day data — verificar si hay celebración del calendario
+    // Verificar si hay celebración en el santoral-movil o santoral para este día
     var infoSinDia = (LITURGIA.calendario && today) ? LITURGIA.calendario[todayKey] : null;
     var celSinDia = infoSinDia && infoSinDia.celebracion;
-    var fallbackColor = (celSinDia && celSinDia.color) || SEASON_DEFAULT_COLOR[info.season] || 'verde';
-    if(isMarian(celSinDia && celSinDia.nombre || '')) fallbackColor = 'azul';
-    applyLiturgicalColor(fallbackColor);
-    var headerHtml = '<div style="font-family:var(--fn-brand);font-size:1.5rem;color:var(--text2);margin-bottom:12px">'+shortDate+'</div>';
-    if(celSinDia){
-      headerHtml += '<div class="cel-banner show"><span class="cel-dot"></span><div class="cel-info"><div class="cel-rango">'+celSinDia.tipo.replace('_',' ')+'</div><div class="cel-nombre">'+celSinDia.nombre+'</div></div></div>';
+
+    // ¿Hay contenido en el santoral para esta celebración?
+    var tieneSantoral = false;
+    if(celSinDia && LITURGIA.santoralMovil){
+      // Buscar en santoral móvil
+      for(var km in LITURGIA.santoralMovil){
+        var cm = LITURGIA.santoralMovil[km];
+        if(cm && cm.info && cm.info.nombre === celSinDia.nombre){
+          tieneSantoral = true; break;
+        }
+      }
     }
-    col.innerHTML='<div class="no-data">'
-      +headerHtml
-      +'<p>El contenido litúrgico de este día aún no ha sido publicado.</p>'
-      +'<p style="margin-top:8px;font-size:0.85rem">Visita nuestro canal de YouTube mientras tanto.</p>'
-      +'</div>';
-    return;
+    if(!tieneSantoral && celSinDia && LITURGIA.santoral && LITURGIA.santoral[celSinDia.clave || '']){
+      tieneSantoral = true;
+    }
+    // Si hay salterio (salmodia de feria), también hay algo que mostrar
+    if(!tieneSantoral && infoSinDia && infoSinDia.salterio && LITURGIA.salterio){
+      var salObj = LITURGIA.salterio['salterio_'+infoSinDia.salterio];
+      if(salObj && salObj.laudes && salObj.laudes[infoSinDia.dia]) tieneSantoral = true;
+    }
+
+    if(tieneSantoral){
+      // Continuar con objeto vacío — buildLaudes resolverá desde santoral + salterio
+      dayData = {};
+    } else {
+      // Nada que mostrar — mostrar mensaje de pendiente
+      var fallbackColor = (celSinDia && celSinDia.color) || SEASON_DEFAULT_COLOR[info.season] || 'verde';
+      if(isMarian(celSinDia && celSinDia.nombre || '')) fallbackColor = 'azul';
+      applyLiturgicalColor(fallbackColor);
+      var headerHtml = '<div style="font-family:var(--fn-brand);font-size:1.5rem;color:var(--text2);margin-bottom:12px">'+shortDate+'</div>';
+      if(celSinDia){
+        var tipoLabel = {solemnidad:'Solemnidad',fiesta:'Fiesta',memoria_obligatoria:'Memoria obligatoria',memoria_opcional:'Memoria opcional'}[celSinDia.tipo] || celSinDia.tipo;
+        headerHtml += '<div class="cel-banner show"><span class="cel-dot"></span><div class="cel-info"><div class="cel-rango">'+tipoLabel+'</div><div class="cel-nombre">'+celSinDia.nombre+'</div></div></div>';
+      }
+      col.innerHTML='<div class="no-data">'+headerHtml
+        +'<p>El contenido litúrgico de este día aún no ha sido publicado.</p>'
+        +'<p style="margin-top:8px;font-size:0.85rem">Visita nuestro canal de YouTube mientras tanto.</p>'
+        +'</div>';
+      return;
+    }
   }
 
   // ── Información de la celebración (preferir calendario litúrgico) ──
