@@ -81,7 +81,11 @@ body, .hdr, .widget, .reading, .cbox, .gospel-card,
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 300;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 /* ── THEME TOGGLE BUTTON ── */
@@ -144,7 +148,7 @@ body{font-family:var(--fn-lit);background:var(--bg);color:var(--text);font-size:
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--bg2)}::-webkit-scrollbar-thumb{background:var(--red-d);border-radius:2px}
 
 /* ── HEADER ── */
-.hdr{background:var(--bg);border-bottom:1px solid var(--bdr);position:sticky;top:0;z-index:200}
+.hdr{background:var(--bg);border-bottom:1px solid var(--bdr);position:sticky;top:10px;z-index:200}
 .hdr-in{max-width:1280px;margin:0 auto;padding:0 32px;height:70px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px}
 .hdr-controls{display:flex;align-items:center;gap:14px;justify-self:start}
 .logo-wrap{display:flex;align-items:center;gap:16px;text-decoration:none;flex-shrink:0;justify-self:center}
@@ -384,8 +388,9 @@ footer{border-top:1px solid var(--bdr);background:var(--bg2);text-align:center;p
     <div class="wtitle">Horas del Oficio</div>
     <ul class="navlinks">
       <li><a href="#" onclick="switchTab('laudes');return false;"><span>Laudes</span><span class="hint">Mañana</span></a></li>
-      <li><a href="#" onclick="switchTab('evangelio');return false;"><span>Evangelio</span><span class="hint">Misa del día</span></a></li>
+      <li><a href="#" onclick="switchTab('nona');return false;"><span>Nona</span><span class="hint">Mediodía</span></a></li>
       <li><a href="#" onclick="switchTab('visperas');return false;"><span>Vísperas</span><span class="hint">Tarde</span></a></li>
+      <li><a href="#" onclick="switchTab('evangelio');return false;"><span>Evangelio</span><span class="hint">Misa del día</span></a></li>
     </ul>
   </div>
   <div class="widget" style="padding:10px">
@@ -1112,6 +1117,74 @@ function buildEvangelio(misa, shortDate){
 }
 
 // ── BUILD VÍSPERAS ────────────────────────────────────────────────
+function buildNona(dayData, shortDate, infoLit, clavAnio) {
+  var h = '<article class="hour" id="hour-nona">';
+  h += '<h1 class="hour-title">Nona</h1>';
+  h += '<p class="hour-sub">Oración de Mediodía · ' + shortDate + '</p>';
+
+  // Obtener salmodia de la Nona del salterio (si disponible)
+  var nona = (dayData && dayData.nona) || {};
+  var salmos = nona.salmodia || [];
+
+  // Intentar cargar del salterio si hay infoLit
+  if(!salmos.length && infoLit && LITURGIA.salterio){
+    var diaNona = infoLit.dia;
+    var semNona = String(infoLit.semana);
+    var salterioSem = LITURGIA.salterio[semNona] || LITURGIA.salterio['iv'];
+    if(salterioSem && salterioSem[diaNona] && salterioSem[diaNona].nona){
+      salmos = salterioSem[diaNona].nona.salmodia || [];
+    } else if(salterioSem && salterioSem[diaNona] && salterioSem[diaNona].laudes){
+      // Fallback: usar el tercer salmo de Laudes si no hay Nona específica
+      var lSalmos = salterioSem[diaNona].laudes.salmodia || [];
+      if(lSalmos.length >= 3) salmos = [lSalmos[2]];
+    }
+  }
+
+  // Saludo inicial
+  h += '<div class="pblock">' + label('Versículo');
+  h += '<p><span class="vm">V.</span> Dios mío, ven en mi auxilio.</p>';
+  h += '<p><span class="vm">R.</span> Señor, date prisa en socorrerme.</p>';
+  h += '<p style="font-style:italic;color:var(--text3);font-size:0.88rem;margin-top:10px">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén. Aleluya.</p>';
+  h += '</div>';
+
+  // Salmodia
+  if(salmos.length){
+    salmos.forEach(function(sal){
+      h += buildSalmo(sal);
+    });
+  } else {
+    h += '<div class="pblock">' + label('Salmodia');
+    h += '<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Salmodia de la Nona — contenido pendiente.</div></div>';
+  }
+
+  // Lectura breve
+  var lect = nona.lectura_breve || {};
+  h += '<div class="pblock">' + label('Lectura Breve');
+  if(lect.texto){
+    h += readingBlock(lect.texto, lect.ref, lect.nota);
+  } else {
+    h += '<div style="font-size:0.82rem;color:var(--text3);font-style:italic">Lectura breve — contenido pendiente.</div>';
+  }
+  h += '</div>';
+
+  // Versículo responsorial
+  var resp = nona.responsorio || {};
+  if(resp.V){
+    h += '<div class="pblock">' + label('Responsorio Breve');
+    h += '<p><span class="vm">V.</span> ' + resp.V + '</p>';
+    if(resp.R) h += '<p><span class="vm">R.</span> ' + resp.R + '</p>';
+    if(resp.V2) h += '<p><span class="vm">V.</span> ' + resp.V2 + '</p>';
+    h += '</div>';
+  }
+
+  // Oración
+  var oracionNona = nona.oracion || null;
+  h += '<div class="pblock">' + label('Oración') + oracion(oracionNona) + '</div>';
+  h += '<div class="orn">✦ &nbsp; ✦ &nbsp; ✦</div>';
+  h += '</article>';
+  return h;
+}
+
 function buildVisperas(visp, shortDate){
   var h='<article class="hour" id="hour-visperas">';
   h+='<h1 class="hour-title">Vísperas</h1>';
@@ -1413,14 +1486,16 @@ async function render(){
   // Tabs
   html+='<nav class="tabs" aria-label="Horas del Oficio">';
   html+='<button class="tab active" data-hour="laudes">Laudes</button>';
-  html+='<button class="tab" data-hour="evangelio">Evangelio</button>';
+  html+='<button class="tab" data-hour="nona">Nona</button>';
   html+='<button class="tab" data-hour="visperas">Vísperas</button>';
+  html+='<button class="tab" data-hour="evangelio">Evangelio</button>';
   html+='</nav>';
 
   // Hours content
   html+=buildLaudes(dayData.laudes||{}, shortDate, dayData.misa||{}, today);
-  html+=buildEvangelio(dayData.misa||{}, shortDate);
+  html+=buildNona(dayData, shortDate, infoLit, clavAnio);
   html+=buildVisperas(dayData.visperas||{}, shortDate);
+  html+=buildEvangelio(dayData.misa||{}, shortDate);
 
   col.innerHTML=html;
 
