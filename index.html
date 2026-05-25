@@ -1427,23 +1427,22 @@ async function render(){
     // ¿Hay contenido en el santoral para esta celebración?
     var tieneSantoral = false;
     if(celSinDia && LITURGIA.santoralMovil){
-      // Buscar en santoral móvil
-      for(var km in LITURGIA.santoralMovil){
-        var cm = LITURGIA.santoralMovil[km];
-        if(cm && cm.info && cm.info.nombre === celSinDia.nombre){
-          tieneSantoral = true; break;
+      // Buscar por clave directa primero
+      if(celSinDia.clave && LITURGIA.santoralMovil[celSinDia.clave]){
+        tieneSantoral = true;
+      } else {
+        // Fallback: buscar por nombre
+        for(var km in LITURGIA.santoralMovil){
+          var cm = LITURGIA.santoralMovil[km];
+          if(cm && cm.info && cm.info.nombre === celSinDia.nombre){
+            tieneSantoral = true; break;
+          }
         }
       }
     }
-    if(!tieneSantoral && celSinDia && LITURGIA.santoral && LITURGIA.santoral[celSinDia.clave || '']){
+    // Siempre mostrar si hay salterio — la feria siempre tiene algo
+    if(!tieneSantoral && infoSinDia && infoSinDia.salterio){
       tieneSantoral = true;
-    }
-    // Si hay salterio (salmodia de feria), también hay algo que mostrar
-    if(!tieneSantoral && infoSinDia && infoSinDia.salterio && LITURGIA.salterio){
-      var salKey = 'salterio_' + infoSinDia.salterio;
-      var salObj = LITURGIA.salterio[salKey];
-      // Nueva estructura: salterio_IV.lunes.laudes.salmodia
-      if(salObj && salObj[infoSinDia.dia] && salObj[infoSinDia.dia].laudes) tieneSantoral = true;
     }
 
     if(tieneSantoral){
