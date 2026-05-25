@@ -818,8 +818,9 @@ function buildLaudes(laud, shortDate, misa, today){
     var diaSem = infoLit.dia;
     if(salterioNum && diaSem){
       var salterioObj = LITURGIA.salterio['salterio_'+salterioNum];
-      if(salterioObj && salterioObj.laudes && salterioObj.laudes[diaSem]){
-        salmodiaContenido = salterioObj.laudes[diaSem];
+      // Nueva estructura: salterio_IV.lunes.laudes.salmodia
+      if(salterioObj && salterioObj[diaSem] && salterioObj[diaSem].laudes){
+        salmodiaContenido = salterioObj[diaSem].laudes;
       }
     }
   }
@@ -1155,14 +1156,16 @@ function buildNona(dayData, shortDate, infoLit, clavAnio) {
   // Intentar cargar del salterio si hay infoLit
   if(!salmos.length && infoLit && LITURGIA.salterio){
     var diaNona = infoLit.dia;
-    var semNona = String(infoLit.semana);
-    var salterioSem = LITURGIA.salterio[semNona] || LITURGIA.salterio['iv'];
-    if(salterioSem && salterioSem[diaNona] && salterioSem[diaNona].nona){
-      salmos = salterioSem[diaNona].nona.salmodia || [];
-    } else if(salterioSem && salterioSem[diaNona] && salterioSem[diaNona].laudes){
-      // Fallback: usar el tercer salmo de Laudes si no hay Nona específica
-      var lSalmos = salterioSem[diaNona].laudes.salmodia || [];
-      if(lSalmos.length >= 3) salmos = [lSalmos[2]];
+    var salterioKey = 'salterio_' + (infoLit.salterio || 'iv');
+    var salterioSem = LITURGIA.salterio[salterioKey];
+    if(salterioSem && salterioSem[diaNona]){
+      if(salterioSem[diaNona].nona){
+        salmos = salterioSem[diaNona].nona.salmodia || [];
+      } else if(salterioSem[diaNona].laudes){
+        // Fallback: usar el tercer salmo de Laudes si no hay Nona específica
+        var lSalmos = salterioSem[diaNona].laudes.salmodia || [];
+        if(lSalmos.length >= 3) salmos = [lSalmos[2]];
+      }
     }
   }
 
@@ -1437,8 +1440,10 @@ async function render(){
     }
     // Si hay salterio (salmodia de feria), también hay algo que mostrar
     if(!tieneSantoral && infoSinDia && infoSinDia.salterio && LITURGIA.salterio){
-      var salObj = LITURGIA.salterio['salterio_'+infoSinDia.salterio];
-      if(salObj && salObj.laudes && salObj.laudes[infoSinDia.dia]) tieneSantoral = true;
+      var salKey = 'salterio_' + infoSinDia.salterio;
+      var salObj = LITURGIA.salterio[salKey];
+      // Nueva estructura: salterio_IV.lunes.laudes.salmodia
+      if(salObj && salObj[infoSinDia.dia] && salObj[infoSinDia.dia].laudes) tieneSantoral = true;
     }
 
     if(tieneSantoral){
