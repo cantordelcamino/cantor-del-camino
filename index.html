@@ -1493,7 +1493,8 @@ async function render(){
 
   // Hours content
   html+=buildLaudes(dayData.laudes||{}, shortDate, dayData.misa||{}, today);
-  html+=buildNona(dayData, shortDate, infoLit, clavAnio);
+  var clavAnioNona = (infoLitDia && infoLitDia.ciclo_fer==='I') ? 'a1' : 'a2';
+  html+=buildNona(dayData, shortDate, infoLitDia, clavAnioNona);
   html+=buildVisperas(dayData.visperas||{}, shortDate);
   html+=buildEvangelio(dayData.misa||{}, shortDate);
 
