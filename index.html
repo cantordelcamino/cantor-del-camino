@@ -7,8 +7,17 @@
 <meta name="description" content="Liturgia de las Horas en texto. Laudes, Vísperas, Completas y Evangelio del día.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
-<!-- Google AdSense — reemplaza ca-pub-XXXXXXXXXX con tu Publisher ID -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W7NP0L86QR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-W7NP0L86QR');
+</script>
+
+<!-- Google AdSense — DESACTIVADO temporalmente. Para reactivar: descomentar las líneas siguientes y reemplazar ca-pub-XXXXXXXXXX con el Publisher ID real -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script> -->
 <style>
 @font-face {
   font-family: 'Neocat';
@@ -338,9 +347,11 @@ footer{border-top:1px solid var(--bdr);background:var(--bg2);text-align:center;p
 
 <!-- Top AdSense -->
 <div class="ad-top">
+  <!-- AdSense slot 1 — DESACTIVADO temporalmente
   <div class="ad-lbl">Publicidad</div>
   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  -->
 </div>
 
 <!-- ══ MAIN ══ -->
@@ -357,6 +368,16 @@ footer{border-top:1px solid var(--bdr);background:var(--bg2);text-align:center;p
   <div class="widget">
     <div class="wtitle">Tiempo Litúrgico</div>
     <div id="seasonWidget"><div style="color:var(--text3);font-style:italic;font-size:0.85rem;">—</div></div>
+  </div>
+
+  <!-- Widget de donación PayPal -->
+  <div class="widget" style="text-align:center;padding:20px 16px">
+    <div class="wtitle">Apóyanos</div>
+    <form action="https://www.paypal.com/donate" method="post" target="_top">
+      <input type="hidden" name="hosted_button_id" value="YFNJFPH9GSFNN" />
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+      <img alt="" border="0" src="https://www.paypal.com/en_DO/i/scr/pixel.gif" width="1" height="1" />
+    </form>
   </div>
   <!-- Spreaker Player -->
   <div class="widget" style="padding:14px">
@@ -393,11 +414,14 @@ footer{border-top:1px solid var(--bdr);background:var(--bg2);text-align:center;p
       <li><a href="#" onclick="switchTab('evangelio');return false;"><span>Evangelio</span><span class="hint">Misa del día</span></a></li>
     </ul>
   </div>
+  <!-- AdSense widget 1 — DESACTIVADO temporalmente
   <div class="widget" style="padding:10px">
     <div class="ad-lbl" style="text-align:center;margin-bottom:6px">Publicidad</div>
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="7777777777" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
+  -->
+  <!-- AdSense widget 2 — DESACTIVADO temporalmente
   <div class="widget" style="padding:10px">
     <div class="ad-lbl" style="text-align:center;margin-bottom:6px">Publicidad</div>
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="4444444444" data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -668,7 +692,9 @@ function salmodia_block(sal, tiempo){
 
 // ── AD BLOCK ─────────────────────────────────────────────────────
 function adBlock(slot){
-  return '<div class="ad-inline"><div class="ad-lbl">Publicidad</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="'+slot+'" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>';
+  // AdSense DESACTIVADO temporalmente. Para reactivar: eliminar el return '' y descomentar la línea siguiente.
+  return '';
+  // return '<div class="ad-inline"><div class="ad-lbl">Publicidad</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="'+slot+'" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>';
 }
 
 // ── BUILD LAUDES ──────────────────────────────────────────────────
