@@ -1417,7 +1417,27 @@ async function render(){
   document.getElementById('seasonWidget').innerHTML=sw;
 
   var col=document.getElementById('mainCol');
-  var dayData=LITURGIA.dias&&LITURGIA.dias[todayKey];
+
+  // ── DIAGNÓSTICO TEMPORAL ──
+  var diagCal = Object.keys(LITURGIA.calendario||{}).length;
+  var diagDias = Object.keys(LITURGIA.dias||{}).length;
+  var diagHoy = getTodayKey();
+  var diagInfo = LITURGIA.calendario ? !!LITURGIA.calendario[diagHoy] : false;
+  if(!diagCal || !diagInfo){
+    col.innerHTML='<div style="padding:40px;font-family:monospace;font-size:14px;color:#ccc">'
+      +'<b>DIAGNÓSTICO</b><br><br>'
+      +'Calendario días cargados: '+diagCal+'<br>'
+      +'JSON días cargados: '+diagDias+'<br>'
+      +'Hoy: '+diagHoy+'<br>'
+      +'Info hoy en calendario: '+diagInfo+'<br>'
+      +'Santoral: '+Object.keys(LITURGIA.santoral||{}).length+' entradas<br>'
+      +'Salterio: '+Object.keys(LITURGIA.salterio||{}).length+' semanas<br>'
+      +'</div>';
+    return;
+  }
+  // ── FIN DIAGNÓSTICO ──
+
+  var dayData=LITURGIA.dias&&LITURGIA.dias[diagHoy];
 
   if(!dayData){
     var infoSinDia = LITURGIA.calendario ? LITURGIA.calendario[todayKey] : null;
