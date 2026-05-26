@@ -1420,48 +1420,13 @@ async function render(){
   var dayData=LITURGIA.dias&&LITURGIA.dias[todayKey];
 
   if(!dayData){
-    // Verificar si hay celebración en el santoral-movil o santoral para este día
-    var infoSinDia = (LITURGIA.calendario && today) ? LITURGIA.calendario[todayKey] : null;
-    var celSinDia = infoSinDia && infoSinDia.celebracion;
-
-    // ¿Hay contenido en el santoral para esta celebración?
-    var tieneSantoral = false;
-    if(celSinDia && LITURGIA.santoralMovil){
-      // Buscar por clave directa primero
-      if(celSinDia.clave && LITURGIA.santoralMovil[celSinDia.clave]){
-        tieneSantoral = true;
-      } else {
-        // Fallback: buscar por nombre
-        for(var km in LITURGIA.santoralMovil){
-          var cm = LITURGIA.santoralMovil[km];
-          if(cm && cm.info && cm.info.nombre === celSinDia.nombre){
-            tieneSantoral = true; break;
-          }
-        }
-      }
-    }
-    // Siempre mostrar si hay salterio — la feria siempre tiene algo
-    if(!tieneSantoral && infoSinDia && infoSinDia.salterio){
-      tieneSantoral = true;
-    }
-
-    if(tieneSantoral){
-      // Continuar con objeto vacío — buildLaudes resolverá desde santoral + salterio
+    var infoSinDia = LITURGIA.calendario ? LITURGIA.calendario[todayKey] : null;
+    // Si el día existe en el calendario litúrgico, SIEMPRE renderizar
+    // La feria siempre tiene algo (salterio), y las celebraciones usan el santoral
+    if(infoSinDia){
       dayData = {};
     } else {
-      // Nada que mostrar — mostrar mensaje de pendiente
-      var fallbackColor = (celSinDia && celSinDia.color) || SEASON_DEFAULT_COLOR[info.season] || 'verde';
-      if(isMarian(celSinDia && celSinDia.nombre || '')) fallbackColor = 'azul';
-      applyLiturgicalColor(fallbackColor);
-      var headerHtml = '<div style="font-family:var(--fn-brand);font-size:1.5rem;color:var(--text2);margin-bottom:12px">'+shortDate+'</div>';
-      if(celSinDia){
-        var tipoLabel = {solemnidad:'Solemnidad',fiesta:'Fiesta',memoria_obligatoria:'Memoria obligatoria',memoria_opcional:'Memoria opcional'}[celSinDia.tipo] || celSinDia.tipo;
-        headerHtml += '<div class="cel-banner show"><span class="cel-dot"></span><div class="cel-info"><div class="cel-rango">'+tipoLabel+'</div><div class="cel-nombre">'+celSinDia.nombre+'</div></div></div>';
-      }
-      col.innerHTML='<div class="no-data">'+headerHtml
-        +'<p>El contenido litúrgico de este día aún no ha sido publicado.</p>'
-        +'<p style="margin-top:8px;font-size:0.85rem">Visita nuestro canal de YouTube mientras tanto.</p>'
-        +'</div>';
+      col.innerHTML='<div class="no-data"><p>El contenido litúrgico de este día aún no ha sido publicado.</p></div>';
       return;
     }
   }
