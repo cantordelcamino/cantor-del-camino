@@ -1332,6 +1332,7 @@ function buildCompletas(comp, shortDate){
 
 // ── MAIN RENDER ───────────────────────────────────────────────────
 async function render(){
+  try {
   if(!_liturgiaLoaded) await loadLiturgia();
   var todayKey=getTodayKey();
   var today=new Date();
@@ -1498,6 +1499,10 @@ async function render(){
   document.querySelectorAll('.tab').forEach(function(btn){
     btn.addEventListener('click',function(){switchTab(this.dataset.hour);});
   });
+  } catch(e) {
+    document.getElementById('mainCol').innerHTML='<div style="padding:40px;font-family:monospace;font-size:13px;color:#f88">'
+      +'<b>ERROR EN RENDER:</b><br>'+e.message+'<br><br>'+e.stack+'</div>';
+  }
 }
 
 function switchTab(hour){
